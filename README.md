@@ -8,3 +8,5 @@ This repository contains the data pipeline and analysis for my thesis, [Grid Sta
 ## How to Run
 1. Install requirements: `pip install -r requirements.txt`
 2. Run acquisition: `python src/01_get_data.py`
+
+![Energy Trend Plot](PLOTS/seasonality_day_month.pngasonality_day_month.png)
