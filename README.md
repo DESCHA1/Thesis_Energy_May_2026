@@ -2,7 +2,7 @@
 This repository contains the data pipeline and analysis for my thesis, [Grid Stability in the Age of Renewables: A Comparative Deep Learning Approach to Residual Load Forecasting].
 
 ## Structure
-- `CORE SCRIPTS/`: Python scripts for data processing and modeling.
+- `SRC/`: Python scripts for data processing and modeling.
 - `DATA/`: (Instructions on how to access data).
 
 ## How to Run
