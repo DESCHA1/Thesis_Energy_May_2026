@@ -1,5 +1,4 @@
 import cdsapi
-import os
 
 c = cdsapi.Client()
 
