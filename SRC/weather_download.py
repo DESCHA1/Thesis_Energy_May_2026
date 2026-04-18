@@ -3,7 +3,7 @@ import os
 import calendar
 import ctypes # Built-in Windows library to prevent sleep
 
-# This line tells Windows the script is busy so it won't sleep
+# The line below tells Windows the script is busy so it won't sleep
 # 0x80000002 = ES_CONTINUOUS | ES_SYSTEM_REQUIRED
 ctypes.windll.kernel32.SetThreadExecutionState(0x80000002)
 

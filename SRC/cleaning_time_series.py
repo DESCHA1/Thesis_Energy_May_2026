@@ -44,5 +44,5 @@ df_clean['residual_load'] = df_clean['DE_load_actual_entsoe_transparency'] - \
 df_clean.reset_index(inplace=True)
 
 print(df_clean.head())
-save_path = '../DATA/cleaned_residual_load_2015_2019.csv'
+save_path = r'C:\Users\desch\.vscode\THESIS_ENERGY_2026\DATA\cleaned_residual_load_2015_2019.csv'
 df_clean.to_csv(save_path, index=False)

@@ -173,7 +173,7 @@ df['month'] = df.index.month
 
 
 # 3. Visualization: Sample Week
-# This helps you see the daily solar "dips" and wind variability
+# This helps us see the daily solar "dips" and wind variability
 sample = df.loc['2015-06-01':'2015-06-07']
 plt.figure(figsize=(12, 5))
 plt.plot(sample.index, sample['DE_load_actual_entsoe_transparency'], label='Total Load', alpha=0.5)
