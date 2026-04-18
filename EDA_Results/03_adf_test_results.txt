@@ -1,0 +1,9 @@
+--- Augmented Dickey-Fuller Test Results ---
+ADF Statistic: -19.7278
+p-value: 0.0000e+00
+Critical Values:
+   1%: -3.4305
+   5%: -2.8616
+   10%: -2.5668
+
+Conclusion: The series is STATIONARY (Reject Null Hypothesis)
