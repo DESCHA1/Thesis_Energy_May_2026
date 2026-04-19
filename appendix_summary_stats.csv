@@ -1,0 +1,9 @@
+,DE_load_actual_entsoe_transparency,DE_solar_generation_actual,DE_wind_generation_actual,DE_wind_onshore_generation_actual,DE_wind_offshore_generation_actual
+count,43823.0,43720.0,43749.0,43751.0,43749.0
+mean,55859.6,4304.66,11157.66,9315.6,1841.74
+std,10005.53,6603.9,8694.21,7699.9,1455.11
+min,31307.0,0.0,135.0,130.0,0.0
+1%,36252.32,0.0,697.48,526.0,18.0
+50%,55467.0,126.0,8728.0,6971.0,1528.0
+99%,73766.0,24633.29,37205.72,33005.0,5557.04
+max,77549.0,30028.0,45085.0,40389.0,6825.0
