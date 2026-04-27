@@ -19,3 +19,19 @@ df['region'] = "DE"
 # 5. Quick Sanity Check
 print(f"✅ Data loaded. Shape: {df.shape}")
 print(f"Columns available: {df.columns.tolist()}")
+
+TFT_FEATURES = {
+    "target": "residual_load",
+    "group_ids": ["region"],
+    "time_idx": "time_idx",
+    "static_categoricals": ["region"],
+    "time_varying_known_reals": [
+        "is_holiday", "is_weekend", 
+        "hour_sin", "hour_cos", 
+        "day_sin", "day_cos"
+    ],
+    "time_varying_unknown_reals": [
+        "residual_load", # Historical values of the target
+        "wind_u", "wind_v", "ghi"
+    ],
+}

@@ -62,8 +62,8 @@ for horizon in CONFIG["horizons"]:
         )
         
         validation = TimeSeriesDataSet.from_dataset(training, val_df)
-        train_loader = training.to_dataloader(train=True, batch_size=CONFIG["batch_size"], num_workers=0)
-        val_loader = validation.to_dataloader(train=False, batch_size=CONFIG["batch_size"], num_workers=0)
+        train_loader = training.to_dataloader(train=True, batch_size=CONFIG["batch_size"], num_workers=7)
+        val_loader = validation.to_dataloader(train=False, batch_size=CONFIG["batch_size"], num_workers=7)
 
         for run in range(CONFIG["robustness_runs"]):
             seed = 42 + run
