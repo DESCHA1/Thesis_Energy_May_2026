@@ -1,0 +1,51 @@
+2026-05-08 10:17:41 - CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+2026-05-08 10:22:55 - CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:05:14
+	Energy:	0.010731125196 kWh
+	CO2eq:	2.718317634715 g
+	This is equivalent to:
+	0.025452412310 km travelled by car
+2026-05-08 10:22:55 - CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+2026-05-08 10:22:55 - CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:05:14
+	Energy:	0.010731125196 kWh
+	CO2eq:	2.718317634715 g
+	This is equivalent to:
+	0.025452412310 km travelled by car
+2026-05-08 10:22:55 - CarbonTracker: Finished monitoring.
+2026-05-08 10:37:56 - CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+2026-05-08 10:46:56 - CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:09:00
+	Energy:	0.018392574211 kWh
+	CO2eq:	4.659050930005 g
+	This is equivalent to:
+	0.043624072378 km travelled by car
+2026-05-08 10:46:56 - CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+2026-05-08 10:46:56 - CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:09:00
+	Energy:	0.018392574211 kWh
+	CO2eq:	4.659050930005 g
+	This is equivalent to:
+	0.043624072378 km travelled by car
+2026-05-08 10:46:56 - CarbonTracker: Finished monitoring.
+2026-05-08 11:09:51 - CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+2026-05-08 11:25:39 - CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:15:48
+	Energy:	0.032355452288 kWh
+	CO2eq:	8.196008799243 g
+	This is equivalent to:
+	0.076741655424 km travelled by car
+2026-05-08 11:25:39 - CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+2026-05-08 11:25:39 - CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:15:48
+	Energy:	0.032355452288 kWh
+	CO2eq:	8.196008799243 g
+	This is equivalent to:
+	0.076741655424 km travelled by car
+2026-05-08 11:25:39 - CarbonTracker: Finished monitoring.

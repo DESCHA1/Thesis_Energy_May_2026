@@ -1,0 +1,26 @@
+{
+  "24": {
+    "d_model": 256,
+    "learning_rate": 0.000840880350376087,
+    "dropout": 0.14875882800723683,
+    "patch_size": 24,
+    "stride": 12,
+    "n_layers": 2
+  },
+  "168": {
+    "d_model": 128,
+    "learning_rate": 0.008926767712926812,
+    "dropout": 0.282021472115179,
+    "patch_size": 48,
+    "stride": 8,
+    "n_layers": 3
+  },
+  "720": {
+    "d_model": 128,
+    "learning_rate": 0.008926767712926812,
+    "dropout": 0.282021472115179,
+    "patch_size": 48,
+    "stride": 8,
+    "n_layers": 3
+  }
+}

@@ -1,0 +1,17 @@
+2026-05-09 09:50:05 - CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+2026-05-09 09:52:26 - CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:02:21
+	Energy:	0.005278420366 kWh
+	CO2eq:	1.337084686018 g
+	This is equivalent to:
+	0.012519519532 km travelled by car
+2026-05-09 09:52:26 - CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+2026-05-09 09:52:26 - CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:02:21
+	Energy:	0.005278420366 kWh
+	CO2eq:	1.337084686018 g
+	This is equivalent to:
+	0.012519519532 km travelled by car
+2026-05-09 09:52:26 - CarbonTracker: Finished monitoring.

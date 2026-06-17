@@ -1,0 +1,2634 @@
+Train/val size: 38689 | Test size: 4299
+
+--- Starting Optuna Hyperparameter Optimisation ---
+
+>>> Tuning for horizon: 24h
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21065.17 | val=21563.20
+  Epoch 02 | train=21033.95 | val=21529.74
+  Epoch 03 | train=20997.22 | val=21489.68
+  Epoch 04 | train=20953.42 | val=21441.97
+  Epoch 05 | train=20904.58 | val=21391.49
+  Epoch 06 | train=20850.70 | val=21333.00
+  Epoch 07 | train=20786.36 | val=21263.59
+  Epoch 08 | train=20712.17 | val=21184.69
+  Epoch 09 | train=20628.28 | val=21093.25
+  Epoch 10 | train=20529.82 | val=20988.32
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:25
+	Energy:	0.000985542033 kWh
+	CO2eq:	0.249649150507 g
+	This is equivalent to:
+	0.002337538862 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:25
+	Energy:	0.000985542033 kWh
+	CO2eq:	0.249649150507 g
+	This is equivalent to:
+	0.002337538862 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21056.42 | val=21542.35
+  Epoch 02 | train=20998.64 | val=21479.62
+  Epoch 03 | train=20928.34 | val=21398.03
+  Epoch 04 | train=20833.30 | val=21288.37
+  Epoch 05 | train=20708.19 | val=21151.13
+  Epoch 06 | train=20555.48 | val=20976.68
+  Epoch 07 | train=20358.21 | val=20753.17
+  Epoch 08 | train=20102.59 | val=20454.84
+  Epoch 09 | train=19764.53 | val=20078.35
+  Epoch 10 | train=19363.21 | val=19652.87
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:19
+	Energy:	0.000746512320 kWh
+	CO2eq:	0.189100170374 g
+	This is equivalent to:
+	0.001770600846 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:19
+	Energy:	0.000746512320 kWh
+	CO2eq:	0.189100170374 g
+	This is equivalent to:
+	0.001770600846 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21058.84 | val=21549.89
+  Epoch 02 | train=21014.90 | val=21504.24
+  Epoch 03 | train=20965.96 | val=21451.55
+  Epoch 04 | train=20909.49 | val=21391.36
+  Epoch 05 | train=20845.72 | val=21323.89
+  Epoch 06 | train=20777.93 | val=21253.59
+  Epoch 07 | train=20703.21 | val=21173.07
+  Epoch 08 | train=20617.99 | val=21083.19
+  Epoch 09 | train=20519.83 | val=20977.53
+  Epoch 10 | train=20409.29 | val=20861.64
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:18
+	Energy:	0.000949289191 kWh
+	CO2eq:	0.240465887995 g
+	This is equivalent to:
+	0.002251553258 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:18
+	Energy:	0.000949289191 kWh
+	CO2eq:	0.240465887995 g
+	This is equivalent to:
+	0.002251553258 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20991.55 | val=21405.62
+  Epoch 02 | train=20780.57 | val=21171.59
+  Epoch 03 | train=20519.35 | val=20879.55
+  Epoch 04 | train=20219.71 | val=20562.14
+  Epoch 05 | train=19860.10 | val=20158.71
+  Epoch 06 | train=19412.55 | val=19659.19
+  Epoch 07 | train=18851.78 | val=19039.05
+  Epoch 08 | train=18171.57 | val=18301.87
+  Epoch 09 | train=17389.37 | val=17448.37
+  Epoch 10 | train=16443.07 | val=16423.38
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:21
+	Energy:	0.001601641228 kWh
+	CO2eq:	0.405714173948 g
+	This is equivalent to:
+	0.003798821853 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:21
+	Energy:	0.001601641228 kWh
+	CO2eq:	0.405714173948 g
+	This is equivalent to:
+	0.003798821853 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21055.21 | val=21541.78
+  Epoch 02 | train=21000.10 | val=21486.52
+  Epoch 03 | train=20949.38 | val=21433.59
+  Epoch 04 | train=20885.48 | val=21356.68
+  Epoch 05 | train=20796.67 | val=21257.40
+  Epoch 06 | train=20684.30 | val=21130.99
+  Epoch 07 | train=20540.99 | val=20965.52
+  Epoch 08 | train=20358.47 | val=20767.76
+  Epoch 09 | train=20141.73 | val=20525.01
+  Epoch 10 | train=19868.27 | val=20230.55
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:19
+	Energy:	0.000849455684 kWh
+	CO2eq:	0.215176910558 g
+	This is equivalent to:
+	0.002014765080 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:19
+	Energy:	0.000849455684 kWh
+	CO2eq:	0.215176910558 g
+	This is equivalent to:
+	0.002014765080 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21064.12 | val=21560.94
+  Epoch 02 | train=21032.61 | val=21529.60
+  Epoch 03 | train=21001.15 | val=21498.01
+  Epoch 04 | train=20968.83 | val=21464.92
+  Epoch 05 | train=20934.87 | val=21430.48
+  Epoch 06 | train=20899.85 | val=21394.38
+  Epoch 07 | train=20864.90 | val=21359.28
+  Epoch 08 | train=20828.26 | val=21321.40
+  Epoch 09 | train=20788.49 | val=21279.48
+  Epoch 10 | train=20745.47 | val=21234.97
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001598607992 kWh
+	CO2eq:	0.404945820304 g
+	This is equivalent to:
+	0.003791627531 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001598607992 kWh
+	CO2eq:	0.404945820304 g
+	This is equivalent to:
+	0.003791627531 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20957.09 | val=21290.10
+  Epoch 02 | train=20484.33 | val=20637.80
+  Epoch 03 | train=19643.98 | val=19581.67
+  Epoch 04 | train=18356.09 | val=18065.16
+  Epoch 05 | train=16597.98 | val=16061.49
+  Epoch 06 | train=14350.42 | val=13592.94
+  Epoch 07 | train=11658.05 | val=10683.32
+  Epoch 08 | train=8637.15 | val=7560.14
+  Epoch 09 | train=5645.69 | val=4715.84
+  Epoch 10 | train=3565.52 | val=3123.92
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.000895276035 kWh
+	CO2eq:	0.226783733142 g
+	This is equivalent to:
+	0.002123443194 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.000895276035 kWh
+	CO2eq:	0.226783733142 g
+	This is equivalent to:
+	0.002123443194 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20046.65 | val=18787.75
+  Epoch 02 | train=15041.19 | val=11586.46
+  Epoch 03 | train=6785.70 | val=3533.29
+  Epoch 04 | train=2850.84 | val=2839.49
+  Epoch 05 | train=2738.13 | val=2771.71
+  Epoch 06 | train=2826.09 | val=4180.38
+  Epoch 07 | train=2794.21 | val=10613.02
+  Epoch 08 | train=2837.11 | val=2611.99
+  Epoch 09 | train=2627.25 | val=2630.87
+  Epoch 10 | train=2581.88 | val=2560.93
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:18
+	Energy:	0.001495480787 kWh
+	CO2eq:	0.378822511329 g
+	This is equivalent to:
+	0.003547027260 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:18
+	Energy:	0.001484630705 kWh
+	CO2eq:	0.376074060466 g
+	This is equivalent to:
+	0.003521292701 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21059.22 | val=21551.02
+  Epoch 02 | train=21016.48 | val=21506.76
+  Epoch 03 | train=20971.40 | val=21461.86
+  Epoch 04 | train=20926.41 | val=21414.00
+  Epoch 05 | train=20872.39 | val=21354.44
+  Epoch 06 | train=20811.84 | val=21291.62
+  Epoch 07 | train=20742.62 | val=21216.31
+  Epoch 08 | train=20661.06 | val=21128.36
+  Epoch 09 | train=20568.00 | val=21029.32
+  Epoch 10 | train=20461.73 | val=20916.07
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:19
+	Energy:	0.001034992741 kWh
+	CO2eq:	0.262175584422 g
+	This is equivalent to:
+	0.002454827569 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:19
+	Energy:	0.001034992741 kWh
+	CO2eq:	0.262175584422 g
+	This is equivalent to:
+	0.002454827569 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20693.97 | val=20630.95
+  Epoch 02 | train=19225.37 | val=18634.89
+  Epoch 03 | train=16806.90 | val=15820.91
+  Epoch 04 | train=13290.09 | val=11591.88
+  Epoch 05 | train=8741.68 | val=6830.79
+  Epoch 06 | train=4457.10 | val=3261.27
+  Epoch 07 | train=2850.68 | val=2843.28
+  Epoch 08 | train=2752.20 | val=2815.60
+  Epoch 09 | train=2738.01 | val=2814.96
+  Epoch 10 | train=2682.30 | val=2714.07
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001576316749 kWh
+	CO2eq:	0.399299191774 g
+	This is equivalent to:
+	0.003738756477 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001576316749 kWh
+	CO2eq:	0.399299191774 g
+	This is equivalent to:
+	0.003738756477 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20972.16 | val=21317.62
+  Epoch 02 | train=20497.35 | val=20614.47
+  Epoch 03 | train=19555.73 | val=19424.32
+  Epoch 04 | train=18119.44 | val=17744.67
+  Epoch 05 | train=16216.75 | val=15611.67
+  Epoch 06 | train=13833.29 | val=13018.07
+  Epoch 07 | train=11015.29 | val=9965.47
+  Epoch 08 | train=7901.11 | val=6789.76
+  Epoch 09 | train=4990.46 | val=4121.06
+  Epoch 10 | train=3248.52 | val=3008.70
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:18
+	Energy:	0.000776018238 kWh
+	CO2eq:	0.196574359489 g
+	This is equivalent to:
+	0.001840583890 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:18
+	Energy:	0.000776018238 kWh
+	CO2eq:	0.196574359489 g
+	This is equivalent to:
+	0.001840583890 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20771.56 | val=20841.71
+  Epoch 02 | train=19661.79 | val=19357.16
+  Epoch 03 | train=17895.43 | val=17301.36
+  Epoch 04 | train=15426.44 | val=14420.45
+  Epoch 05 | train=12082.34 | val=10636.28
+  Epoch 06 | train=8226.34 | val=6965.00
+  Epoch 07 | train=4862.14 | val=3679.45
+  Epoch 08 | train=2968.71 | val=2877.35
+  Epoch 09 | train=2776.19 | val=2873.10
+  Epoch 10 | train=2773.50 | val=2841.88
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:19
+	Energy:	0.001518856381 kWh
+	CO2eq:	0.384743818593 g
+	This is equivalent to:
+	0.003602470212 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:19
+	Energy:	0.001518856381 kWh
+	CO2eq:	0.384743818593 g
+	This is equivalent to:
+	0.003602470212 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20204.05 | val=19164.04
+  Epoch 02 | train=15815.18 | val=12794.78
+  Epoch 03 | train=8170.46 | val=4579.56
+  Epoch 04 | train=3060.66 | val=2840.16
+  Epoch 05 | train=2783.18 | val=2928.97
+  Epoch 06 | train=2775.00 | val=2834.68
+  Epoch 07 | train=2756.04 | val=2707.47
+  Epoch 08 | train=2696.43 | val=2754.59
+  Epoch 09 | train=2624.56 | val=2654.06
+  Epoch 10 | train=2600.78 | val=2613.68
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001560030747 kWh
+	CO2eq:	0.395173759721 g
+	This is equivalent to:
+	0.003700128836 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001560030747 kWh
+	CO2eq:	0.395173759721 g
+	This is equivalent to:
+	0.003700128836 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20025.75 | val=18654.21
+  Epoch 02 | train=14690.91 | val=10983.89
+  Epoch 03 | train=6223.35 | val=3203.14
+  Epoch 04 | train=2812.25 | val=2837.99
+  Epoch 05 | train=2775.03 | val=2869.96
+  Epoch 06 | train=2745.48 | val=2698.62
+  Epoch 07 | train=2659.60 | val=2610.74
+  Epoch 08 | train=2599.90 | val=2609.21
+  Epoch 09 | train=2619.83 | val=2590.04
+  Epoch 10 | train=2585.17 | val=2598.60
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001543842279 kWh
+	CO2eq:	0.391073034368 g
+	This is equivalent to:
+	0.003661732532 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001543842279 kWh
+	CO2eq:	0.391073034368 g
+	This is equivalent to:
+	0.003661732532 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21064.66 | val=21561.54
+  Epoch 02 | train=21033.96 | val=21531.12
+  Epoch 03 | train=21003.54 | val=21500.55
+  Epoch 04 | train=20972.22 | val=21468.40
+  Epoch 05 | train=20939.20 | val=21434.37
+  Epoch 06 | train=20904.13 | val=21398.11
+  Epoch 07 | train=20866.72 | val=21359.26
+  Epoch 08 | train=20827.31 | val=21319.07
+  Epoch 09 | train=20786.44 | val=21277.44
+  Epoch 10 | train=20743.04 | val=21231.71
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001604168856 kWh
+	CO2eq:	0.406354451160 g
+	This is equivalent to:
+	0.003804816958 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001604168856 kWh
+	CO2eq:	0.406354451160 g
+	This is equivalent to:
+	0.003804816958 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20899.53 | val=21183.40
+  Epoch 02 | train=20355.81 | val=20491.37
+  Epoch 03 | train=19513.58 | val=19493.17
+  Epoch 04 | train=18360.07 | val=18176.42
+  Epoch 05 | train=16939.17 | val=16656.00
+  Epoch 06 | train=15167.84 | val=14620.26
+  Epoch 07 | train=12945.98 | val=12245.60
+  Epoch 08 | train=10581.63 | val=9889.85
+  Epoch 09 | train=8002.20 | val=7080.49
+  Epoch 10 | train=5438.53 | val=4771.53
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001571186866 kWh
+	CO2eq:	0.397999733270 g
+	This is equivalent to:
+	0.003726589263 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001571186866 kWh
+	CO2eq:	0.397999733270 g
+	This is equivalent to:
+	0.003726589263 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21072.68 | val=21579.50
+  Epoch 02 | train=21060.03 | val=21566.66
+  Epoch 03 | train=21047.34 | val=21554.05
+  Epoch 04 | train=21034.78 | val=21541.55
+  Epoch 05 | train=21022.24 | val=21528.99
+  Epoch 06 | train=21009.53 | val=21516.14
+  Epoch 07 | train=20996.44 | val=21502.96
+  Epoch 08 | train=20983.82 | val=21490.57
+  Epoch 09 | train=20971.27 | val=21477.89
+  Epoch 10 | train=20958.35 | val=21464.84
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001631587903 kWh
+	CO2eq:	0.413300011629 g
+	This is equivalent to:
+	0.003869850296 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001631587903 kWh
+	CO2eq:	0.413300011629 g
+	This is equivalent to:
+	0.003869850296 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20578.52 | val=20230.15
+  Epoch 02 | train=18158.19 | val=16692.52
+  Epoch 03 | train=13554.58 | val=11106.05
+  Epoch 04 | train=7686.42 | val=5019.09
+  Epoch 05 | train=3260.25 | val=2849.60
+  Epoch 06 | train=2760.24 | val=2853.91
+  Epoch 07 | train=2678.68 | val=2727.85
+  Epoch 08 | train=2723.30 | val=2697.98
+  Epoch 09 | train=2731.86 | val=2737.91
+  Epoch 10 | train=2723.00 | val=2757.68
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001064326653 kWh
+	CO2eq:	0.269606202248 g
+	This is equivalent to:
+	0.002524402643 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:20
+	Energy:	0.001064326653 kWh
+	CO2eq:	0.269606202248 g
+	This is equivalent to:
+	0.002524402643 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21057.10 | val=21544.09
+  Epoch 02 | train=20995.92 | val=21469.50
+  Epoch 03 | train=20912.54 | val=21380.90
+  Epoch 04 | train=20820.73 | val=21275.53
+  Epoch 05 | train=20690.92 | val=21120.82
+  Epoch 06 | train=20508.83 | val=20911.31
+  Epoch 07 | train=20270.46 | val=20643.06
+  Epoch 08 | train=19968.99 | val=20304.84
+  Epoch 09 | train=19600.66 | val=19903.04
+  Epoch 10 | train=19171.21 | val=19445.30
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:19
+	Energy:	0.000784936285 kWh
+	CO2eq:	0.198833403361 g
+	This is equivalent to:
+	0.001861735987 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:19
+	Energy:	0.000784936285 kWh
+	CO2eq:	0.198833403361 g
+	This is equivalent to:
+	0.001861735987 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20818.93 | val=20972.28
+  Epoch 02 | train=19932.29 | val=19804.30
+  Epoch 03 | train=18526.16 | val=18136.48
+  Epoch 04 | train=16494.40 | val=15755.68
+  Epoch 05 | train=13938.18 | val=13022.69
+  Epoch 06 | train=10747.19 | val=9400.49
+  Epoch 07 | train=7160.80 | val=5838.63
+  Epoch 08 | train=4094.72 | val=3352.26
+  Epoch 09 | train=2924.98 | val=2896.24
+  Epoch 10 | train=2747.08 | val=2759.62
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:21
+	Energy:	0.001585765695 kWh
+	CO2eq:	0.401692718607 g
+	This is equivalent to:
+	0.003761167777 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:21
+	Energy:	0.001585765695 kWh
+	CO2eq:	0.401692718607 g
+	This is equivalent to:
+	0.003761167777 km travelled by car
+CarbonTracker: Finished monitoring.
+   Best Params for 24h: {'d_model': 256, 'learning_rate': 0.009449840983795615, 'dropout': 0.13829745457867082}
+
+>>> Tuning for horizon: 168h
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20813.35 | val=20842.57
+  Epoch 02 | train=19936.50 | val=19754.69
+  Epoch 03 | train=18585.49 | val=18130.41
+  Epoch 04 | train=16653.98 | val=15853.49
+  Epoch 05 | train=14041.71 | val=12928.75
+  Epoch 06 | train=10823.96 | val=9440.51
+  Epoch 07 | train=7248.46 | val=5847.56
+  Epoch 08 | train=4170.75 | val=3314.32
+  Epoch 09 | train=2846.67 | val=2796.22
+  Epoch 10 | train=2710.83 | val=2769.60
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004561888527 kWh
+	CO2eq:	1.155578916727 g
+	This is equivalent to:
+	0.010820027310 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004561888527 kWh
+	CO2eq:	1.155578916727 g
+	This is equivalent to:
+	0.010820027310 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20997.91 | val=21224.71
+  Epoch 02 | train=20591.96 | val=20727.42
+  Epoch 03 | train=19973.59 | val=19991.56
+  Epoch 04 | train=19103.94 | val=18968.08
+  Epoch 05 | train=17945.89 | val=17686.53
+  Epoch 06 | train=16489.54 | val=16024.79
+  Epoch 07 | train=14679.96 | val=14059.83
+  Epoch 08 | train=12524.89 | val=11765.62
+  Epoch 09 | train=10108.17 | val=9198.24
+  Epoch 10 | train=7492.08 | val=6590.54
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:33
+	Energy:	0.003053512057 kWh
+	CO2eq:	0.773489780481 g
+	This is equivalent to:
+	0.007242413675 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:33
+	Energy:	0.003053512057 kWh
+	CO2eq:	0.773489780481 g
+	This is equivalent to:
+	0.007242413675 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=19626.50 | val=17866.36
+  Epoch 02 | train=14365.06 | val=10913.41
+  Epoch 03 | train=6380.45 | val=3200.88
+  Epoch 04 | train=2785.23 | val=2836.00
+  Epoch 05 | train=2745.43 | val=2793.48
+  Epoch 06 | train=2720.67 | val=2786.02
+  Epoch 07 | train=2725.58 | val=2789.90
+  Epoch 08 | train=2742.10 | val=2768.55
+  Epoch 09 | train=2714.18 | val=2770.49
+  Epoch 10 | train=2720.12 | val=2759.25
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:01:15
+	Energy:	0.008824978366 kWh
+	CO2eq:	2.235468683841 g
+	This is equivalent to:
+	0.020931354718 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:01:15
+	Energy:	0.008824978366 kWh
+	CO2eq:	2.235468683841 g
+	This is equivalent to:
+	0.020931354718 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21115.98 | val=21479.62
+  Epoch 02 | train=21037.51 | val=21411.31
+  Epoch 03 | train=20972.59 | val=21349.23
+  Epoch 04 | train=20911.05 | val=21288.71
+  Epoch 05 | train=20850.28 | val=21228.19
+  Epoch 06 | train=20788.83 | val=21165.85
+  Epoch 07 | train=20725.64 | val=21101.91
+  Epoch 08 | train=20660.54 | val=21035.20
+  Epoch 09 | train=20592.37 | val=20965.55
+  Epoch 10 | train=20521.29 | val=20892.87
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:01:16
+	Energy:	0.009077020152 kWh
+	CO2eq:	2.299313771693 g
+	This is equivalent to:
+	0.021529155166 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:01:16
+	Energy:	0.009077020152 kWh
+	CO2eq:	2.299313771693 g
+	This is equivalent to:
+	0.021529155166 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21128.59 | val=21499.09
+  Epoch 02 | train=21064.40 | val=21441.53
+  Epoch 03 | train=21010.13 | val=21390.74
+  Epoch 04 | train=20960.25 | val=21342.60
+  Epoch 05 | train=20912.09 | val=21294.56
+  Epoch 06 | train=20863.99 | val=21246.30
+  Epoch 07 | train=20815.45 | val=21197.20
+  Epoch 08 | train=20766.03 | val=21147.92
+  Epoch 09 | train=20715.72 | val=21096.07
+  Epoch 10 | train=20663.30 | val=21043.15
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:01:16
+	Energy:	0.009058046477 kWh
+	CO2eq:	2.294507521214 g
+	This is equivalent to:
+	0.021484152820 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:01:16
+	Energy:	0.009058046477 kWh
+	CO2eq:	2.294507521214 g
+	This is equivalent to:
+	0.021484152820 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21151.37 | val=21548.38
+  Epoch 02 | train=21130.60 | val=21527.29
+  Epoch 03 | train=21109.85 | val=21505.71
+  Epoch 04 | train=21088.15 | val=21482.99
+  Epoch 05 | train=21064.79 | val=21458.81
+  Epoch 06 | train=21039.87 | val=21433.34
+  Epoch 07 | train=21013.25 | val=21404.90
+  Epoch 08 | train=20983.49 | val=21373.45
+  Epoch 09 | train=20951.03 | val=21339.73
+  Epoch 10 | train=20915.94 | val=21303.05
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:28
+	Energy:	0.002407756660 kWh
+	CO2eq:	0.609912499364 g
+	This is equivalent to:
+	0.005710791193 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:28
+	Energy:	0.002407756660 kWh
+	CO2eq:	0.609912499364 g
+	This is equivalent to:
+	0.005710791193 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21073.16 | val=21394.44
+  Epoch 02 | train=20894.34 | val=21199.98
+  Epoch 03 | train=20674.15 | val=20950.91
+  Epoch 04 | train=20395.04 | val=20638.64
+  Epoch 05 | train=20043.95 | val=20246.03
+  Epoch 06 | train=19607.99 | val=19770.04
+  Epoch 07 | train=19086.14 | val=19193.65
+  Epoch 08 | train=18458.89 | val=18514.48
+  Epoch 09 | train=17728.58 | val=17730.42
+  Epoch 10 | train=16895.56 | val=16844.65
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:33
+	Energy:	0.003039120433 kWh
+	CO2eq:	0.769844216335 g
+	This is equivalent to:
+	0.007208279179 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:33
+	Energy:	0.003039120433 kWh
+	CO2eq:	0.769844216335 g
+	This is equivalent to:
+	0.007208279179 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21088.06 | val=21426.39
+  Epoch 02 | train=20949.21 | val=21282.18
+  Epoch 03 | train=20786.81 | val=21099.96
+  Epoch 04 | train=20586.82 | val=20881.58
+  Epoch 05 | train=20344.41 | val=20617.66
+  Epoch 06 | train=20052.65 | val=20289.70
+  Epoch 07 | train=19695.13 | val=19906.09
+  Epoch 08 | train=19278.10 | val=19450.24
+  Epoch 09 | train=18787.39 | val=18923.19
+  Epoch 10 | train=18223.74 | val=18321.28
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:33
+	Energy:	0.003047260766 kWh
+	CO2eq:	0.771906256487 g
+	This is equivalent to:
+	0.007227586671 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:33
+	Energy:	0.003047260766 kWh
+	CO2eq:	0.771906256487 g
+	This is equivalent to:
+	0.007227586671 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21124.16 | val=21493.82
+  Epoch 02 | train=21056.40 | val=21431.96
+  Epoch 03 | train=20995.07 | val=21372.48
+  Epoch 04 | train=20934.68 | val=21311.28
+  Epoch 05 | train=20872.47 | val=21247.29
+  Epoch 06 | train=20807.86 | val=21181.62
+  Epoch 07 | train=20738.62 | val=21109.25
+  Epoch 08 | train=20663.63 | val=21032.06
+  Epoch 09 | train=20584.10 | val=20949.33
+  Epoch 10 | train=20498.13 | val=20859.81
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004637419878 kWh
+	CO2eq:	1.174711878210 g
+	This is equivalent to:
+	0.010999174890 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004637419878 kWh
+	CO2eq:	1.174711878210 g
+	This is equivalent to:
+	0.010999174890 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21130.15 | val=21508.75
+  Epoch 02 | train=21074.99 | val=21457.42
+  Epoch 03 | train=21023.23 | val=21404.49
+  Epoch 04 | train=20968.45 | val=21348.00
+  Epoch 05 | train=20908.50 | val=21284.75
+  Epoch 06 | train=20841.85 | val=21215.15
+  Epoch 07 | train=20769.56 | val=21138.99
+  Epoch 08 | train=20688.02 | val=21053.03
+  Epoch 09 | train=20597.76 | val=20958.11
+  Epoch 10 | train=20498.61 | val=20853.94
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:33
+	Energy:	0.003073707173 kWh
+	CO2eq:	0.778605435913 g
+	This is equivalent to:
+	0.007290313070 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:33
+	Energy:	0.003073707173 kWh
+	CO2eq:	0.778605435913 g
+	This is equivalent to:
+	0.007290313070 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=17149.91 | val=10253.06
+  Epoch 02 | train=4221.81 | val=2810.39
+  Epoch 03 | train=2751.89 | val=2817.36
+  Epoch 04 | train=2747.73 | val=2799.30
+  Epoch 05 | train=2754.01 | val=2805.73
+  Epoch 06 | train=2748.61 | val=2809.07
+  Epoch 07 | train=2746.08 | val=2822.10
+  Epoch 08 | train=2749.12 | val=2826.93
+  Epoch 09 | train=2742.70 | val=2810.40
+  Early stopping at epoch 9
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:01:07
+	Energy:	0.007926405395 kWh
+	CO2eq:	2.007849798810 g
+	This is equivalent to:
+	0.018800091749 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:01:07
+	Energy:	0.007926405395 kWh
+	CO2eq:	2.007849798810 g
+	This is equivalent to:
+	0.018800091749 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20328.27 | val=19621.86
+  Epoch 02 | train=17435.54 | val=15585.35
+  Epoch 03 | train=12164.76 | val=9162.06
+  Epoch 04 | train=5540.07 | val=3335.58
+  Epoch 05 | train=2813.23 | val=2791.75
+  Epoch 06 | train=2710.93 | val=2721.97
+  Epoch 07 | train=2681.92 | val=2706.23
+  Epoch 08 | train=2665.46 | val=2708.81
+  Epoch 09 | train=2660.70 | val=2694.73
+  Epoch 10 | train=2670.92 | val=2695.21
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004678826852 kWh
+	CO2eq:	1.185200741794 g
+	This is equivalent to:
+	0.011097385223 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004678826852 kWh
+	CO2eq:	1.185200741794 g
+	This is equivalent to:
+	0.011097385223 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=19330.58 | val=16766.17
+  Epoch 02 | train=11392.64 | val=5922.80
+  Epoch 03 | train=3250.50 | val=2811.11
+  Epoch 04 | train=2725.43 | val=2766.91
+  Epoch 05 | train=2699.64 | val=2770.30
+  Epoch 06 | train=2692.75 | val=2833.23
+  Epoch 07 | train=2681.23 | val=2754.87
+  Epoch 08 | train=2683.63 | val=2828.63
+  Epoch 09 | train=2682.15 | val=2801.95
+  Epoch 10 | train=2670.09 | val=2852.51
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004609380225 kWh
+	CO2eq:	1.167609111025 g
+	This is equivalent to:
+	0.010932669579 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004609380225 kWh
+	CO2eq:	1.167609111025 g
+	This is equivalent to:
+	0.010932669579 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=19127.10 | val=16153.08
+  Epoch 02 | train=10011.06 | val=4214.56
+  Epoch 03 | train=2877.81 | val=2762.52
+  Epoch 04 | train=2698.21 | val=2743.41
+  Epoch 05 | train=2701.00 | val=2734.46
+  Epoch 06 | train=2702.86 | val=2720.90
+  Epoch 07 | train=2702.80 | val=2900.94
+  Epoch 08 | train=2746.02 | val=2770.53
+  Epoch 09 | train=2728.59 | val=2752.41
+  Epoch 10 | train=2723.46 | val=2745.36
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004587326310 kWh
+	CO2eq:	1.162022600276 g
+	This is equivalent to:
+	0.010880361426 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004587326310 kWh
+	CO2eq:	1.162022600276 g
+	This is equivalent to:
+	0.010880361426 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20510.28 | val=20080.88
+  Epoch 02 | train=18415.96 | val=17221.59
+  Epoch 03 | train=14664.38 | val=12557.69
+  Epoch 04 | train=9232.62 | val=6615.71
+  Epoch 05 | train=4110.71 | val=2887.40
+  Epoch 06 | train=2766.05 | val=2790.47
+  Epoch 07 | train=2719.57 | val=2747.55
+  Epoch 08 | train=2701.79 | val=2727.42
+  Epoch 09 | train=2672.98 | val=2733.55
+  Epoch 10 | train=2680.11 | val=2724.22
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004682174624 kWh
+	CO2eq:	1.186048770969 g
+	This is equivalent to:
+	0.011105325571 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004682174624 kWh
+	CO2eq:	1.186048770969 g
+	This is equivalent to:
+	0.011105325571 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20392.92 | val=19809.92
+  Epoch 02 | train=17755.25 | val=16072.24
+  Epoch 03 | train=12908.58 | val=10118.18
+  Epoch 04 | train=6433.94 | val=3830.78
+  Epoch 05 | train=2919.07 | val=2808.57
+  Epoch 06 | train=2743.92 | val=2786.88
+  Epoch 07 | train=2698.50 | val=2736.24
+  Epoch 08 | train=2699.76 | val=2730.01
+  Epoch 09 | train=2686.08 | val=2714.60
+  Epoch 10 | train=2674.94 | val=2717.25
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004638135801 kWh
+	CO2eq:	1.174893229669 g
+	This is equivalent to:
+	0.011000872937 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004638135801 kWh
+	CO2eq:	1.174893229669 g
+	This is equivalent to:
+	0.011000872937 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21033.76 | val=21278.79
+  Epoch 02 | train=20637.03 | val=20756.76
+  Epoch 03 | train=19986.83 | val=19959.93
+  Epoch 04 | train=19039.41 | val=18865.56
+  Epoch 05 | train=17779.42 | val=17423.18
+  Epoch 06 | train=16188.53 | val=15668.82
+  Epoch 07 | train=14244.46 | val=13581.53
+  Epoch 08 | train=11985.05 | val=11144.38
+  Epoch 09 | train=9451.05 | val=8513.24
+  Epoch 10 | train=6842.52 | val=5958.81
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:28
+	Energy:	0.002395223003 kWh
+	CO2eq:	0.606737579504 g
+	This is equivalent to:
+	0.005681063479 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:28
+	Energy:	0.002395223003 kWh
+	CO2eq:	0.606737579504 g
+	This is equivalent to:
+	0.005681063479 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20931.54 | val=21109.22
+  Epoch 02 | train=20448.59 | val=20561.54
+  Epoch 03 | train=19786.42 | val=19772.26
+  Epoch 04 | train=18881.87 | val=18738.55
+  Epoch 05 | train=17707.64 | val=17405.69
+  Epoch 06 | train=16225.76 | val=15764.00
+  Epoch 07 | train=14394.60 | val=13770.36
+  Epoch 08 | train=12241.10 | val=11527.01
+  Epoch 09 | train=9899.74 | val=8992.07
+  Epoch 10 | train=7296.81 | val=6390.09
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004675287749 kWh
+	CO2eq:	1.184304246219 g
+	This is equivalent to:
+	0.011088991069 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004675287749 kWh
+	CO2eq:	1.184304246219 g
+	This is equivalent to:
+	0.011088991069 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=21060.53 | val=21376.26
+  Epoch 02 | train=20883.12 | val=21202.17
+  Epoch 03 | train=20698.29 | val=21002.94
+  Epoch 04 | train=20485.41 | val=20773.86
+  Epoch 05 | train=20234.01 | val=20499.82
+  Epoch 06 | train=19940.26 | val=20183.77
+  Epoch 07 | train=19599.99 | val=19819.74
+  Epoch 08 | train=19211.99 | val=19405.22
+  Epoch 09 | train=18769.82 | val=18931.46
+  Epoch 10 | train=18261.13 | val=18387.60
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004704107393 kWh
+	CO2eq:	1.191604593934 g
+	This is equivalent to:
+	0.011157346385 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004704107393 kWh
+	CO2eq:	1.191604593934 g
+	This is equivalent to:
+	0.011157346385 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=20247.19 | val=19388.09
+  Epoch 02 | train=16889.46 | val=14722.35
+  Epoch 03 | train=10920.58 | val=7482.58
+  Epoch 04 | train=4266.50 | val=2827.70
+  Epoch 05 | train=2762.78 | val=2799.59
+  Epoch 06 | train=2740.93 | val=2770.68
+  Epoch 07 | train=2707.02 | val=2715.56
+  Epoch 08 | train=2694.29 | val=2706.10
+  Epoch 09 | train=2680.05 | val=2705.67
+  Epoch 10 | train=2682.35 | val=2741.84
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004640781650 kWh
+	CO2eq:	1.175563453665 g
+	This is equivalent to:
+	0.011007148443 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:45
+	Energy:	0.004640781650 kWh
+	CO2eq:	1.175563453665 g
+	This is equivalent to:
+	0.011007148443 km travelled by car
+CarbonTracker: Finished monitoring.
+   Best Params for 168h: {'d_model': 128, 'learning_rate': 0.005083600607182071, 'dropout': 0.1622255273370664}
+
+>>> Applying 168h parameters to 720h horizon
+[SAVED] Best hyperparameters → DATA/qr_patchtst_run_01/best_hyperparams.json
+
+===== BEST HYPERPARAMETERS SUMMARY =====
+  24h : {'d_model': 256, 'learning_rate': 0.009449840983795615, 'dropout': 0.13829745457867082}
+  168h : {'d_model': 128, 'learning_rate': 0.005083600607182071, 'dropout': 0.1622255273370664}
+  720h : {'d_model': 128, 'learning_rate': 0.005083600607182071, 'dropout': 0.1622255273370664}
+=========================================
+
+
+========================================
+>>> CROSS-VALIDATION: 24h
+========================================
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=17516.89 | val=11395.20
+  Epoch 02 | train=4774.43 | val=3155.42
+  Epoch 03 | train=2773.86 | val=2812.13
+  Epoch 04 | train=2758.15 | val=2785.79
+  Epoch 05 | train=2706.01 | val=2655.69
+  Epoch 06 | train=2600.31 | val=2716.07
+  Epoch 07 | train=2574.24 | val=2567.14
+  Epoch 08 | train=2533.41 | val=2672.67
+  Epoch 09 | train=2568.97 | val=2580.62
+  Epoch 10 | train=2541.76 | val=2547.83
+  Epoch 11 | train=2462.03 | val=2484.71
+  Epoch 12 | train=2429.02 | val=2479.83
+  Epoch 13 | train=2403.35 | val=2451.51
+  Epoch 14 | train=2401.78 | val=2534.69
+  Epoch 15 | train=2402.40 | val=2469.31
+  Epoch 16 | train=2366.92 | val=2467.57
+  Epoch 17 | train=2376.61 | val=2571.65
+  Epoch 18 | train=2348.65 | val=2467.31
+  Epoch 19 | train=2353.15 | val=2423.45
+  Epoch 20 | train=2324.76 | val=2398.25
+  Epoch 21 | train=2296.43 | val=2376.00
+  Epoch 22 | train=2280.01 | val=2358.52
+  Epoch 23 | train=2270.12 | val=2379.83
+  Epoch 24 | train=2257.47 | val=2326.86
+  Epoch 25 | train=2261.70 | val=2324.40
+  Epoch 26 | train=2251.81 | val=2325.53
+  Epoch 27 | train=2257.28 | val=2335.05
+  Epoch 28 | train=2234.36 | val=2353.80
+  Epoch 29 | train=2290.06 | val=2431.18
+  Epoch 30 | train=2249.74 | val=2330.37
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:01:35
+	Energy:	0.006039968828 kWh
+	CO2eq:	1.529993684497 g
+	This is equivalent to:
+	0.014325783563 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:01:35
+	Energy:	0.006039968828 kWh
+	CO2eq:	1.529993684497 g
+	This is equivalent to:
+	0.014325783563 km travelled by car
+CarbonTracker: Finished monitoring.
+[SAVED] Importance plot → DATA/qr_patchtst_run_01/importance_24h_fold1_patch_attention.png
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=17595.70 | val=11694.70
+  Epoch 02 | train=4862.65 | val=2863.35
+  Epoch 03 | train=2756.76 | val=2737.86
+  Epoch 04 | train=2715.24 | val=2734.92
+  Epoch 05 | train=2693.88 | val=2674.31
+  Epoch 06 | train=2657.20 | val=2697.27
+  Epoch 07 | train=2581.60 | val=2627.62
+  Epoch 08 | train=2487.12 | val=2652.35
+  Epoch 09 | train=2499.39 | val=2714.06
+  Epoch 10 | train=2472.65 | val=2621.28
+  Epoch 11 | train=2492.39 | val=2534.99
+  Epoch 12 | train=2506.81 | val=2801.96
+  Epoch 13 | train=2486.49 | val=2479.56
+  Epoch 14 | train=2426.99 | val=2509.40
+  Epoch 15 | train=2417.39 | val=2533.15
+  Epoch 16 | train=2419.65 | val=2470.36
+  Epoch 17 | train=2395.22 | val=2753.95
+  Epoch 18 | train=2395.40 | val=2515.20
+  Epoch 19 | train=2369.42 | val=2494.37
+  Epoch 20 | train=2357.88 | val=2531.06
+  Epoch 21 | train=2333.35 | val=2497.44
+  Epoch 22 | train=2325.08 | val=2412.35
+  Epoch 23 | train=2315.25 | val=2485.77
+  Epoch 24 | train=2314.94 | val=2452.99
+  Epoch 25 | train=2305.90 | val=2503.57
+  Epoch 26 | train=2301.32 | val=2415.10
+  Epoch 27 | train=2298.26 | val=2428.76
+  Epoch 28 | train=2293.24 | val=2434.08
+  Epoch 29 | train=2292.92 | val=2403.89
+  Epoch 30 | train=2284.19 | val=2466.53
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:01:36
+	Energy:	0.006078425667 kWh
+	CO2eq:	1.539735244979 g
+	This is equivalent to:
+	0.014416996676 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:01:36
+	Energy:	0.006078425667 kWh
+	CO2eq:	1.539735244979 g
+	This is equivalent to:
+	0.014416996676 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=17610.32 | val=11660.32
+  Epoch 02 | train=4858.01 | val=2886.16
+  Epoch 03 | train=2737.64 | val=2773.10
+  Epoch 04 | train=2708.04 | val=2744.28
+  Epoch 05 | train=2692.70 | val=2744.04
+  Epoch 06 | train=2522.36 | val=2535.71
+  Epoch 07 | train=2597.20 | val=2558.17
+  Epoch 08 | train=2679.77 | val=2756.20
+  Epoch 09 | train=2565.71 | val=2617.03
+  Epoch 10 | train=2526.95 | val=2527.08
+  Epoch 11 | train=2467.79 | val=2805.92
+  Epoch 12 | train=2517.48 | val=2703.16
+  Epoch 13 | train=2490.69 | val=2560.58
+  Epoch 14 | train=2499.10 | val=2685.14
+  Epoch 15 | train=2475.38 | val=2542.00
+  Epoch 16 | train=2422.21 | val=2602.84
+  Epoch 17 | train=2426.01 | val=2544.44
+  Epoch 18 | train=2413.03 | val=2545.17
+  Early stopping at epoch 18
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:00:55
+	Energy:	0.003534622814 kWh
+	CO2eq:	0.895360677627 g
+	This is equivalent to:
+	0.008383526944 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:00:55
+	Energy:	0.003534622814 kWh
+	CO2eq:	0.895360677627 g
+	This is equivalent to:
+	0.008383526944 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=11330.05 | val=3066.99
+  Epoch 02 | train=2816.47 | val=3178.88
+  Epoch 03 | train=2808.79 | val=3155.87
+  Epoch 04 | train=2761.65 | val=2943.83
+  Epoch 05 | train=2584.74 | val=2786.44
+  Epoch 06 | train=2503.27 | val=2734.09
+  Epoch 07 | train=2486.30 | val=2803.20
+  Epoch 08 | train=2464.37 | val=2811.91
+  Epoch 09 | train=2447.04 | val=2730.87
+  Epoch 10 | train=2408.88 | val=2784.51
+  Epoch 11 | train=2395.87 | val=2795.30
+  Epoch 12 | train=2364.29 | val=2656.14
+  Epoch 13 | train=2357.91 | val=2852.98
+  Epoch 14 | train=2337.63 | val=2692.48
+  Epoch 15 | train=2319.71 | val=2735.49
+  Epoch 16 | train=2272.72 | val=2709.94
+  Epoch 17 | train=2262.01 | val=2718.37
+  Epoch 18 | train=2229.18 | val=2720.58
+  Epoch 19 | train=2225.73 | val=2850.69
+  Epoch 20 | train=2241.39 | val=2796.66
+  Early stopping at epoch 20
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:01:21
+	Energy:	0.005963390237 kWh
+	CO2eq:	1.510595445407 g
+	This is equivalent to:
+	0.014144152111 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:01:21
+	Energy:	0.005963390237 kWh
+	CO2eq:	1.510595445407 g
+	This is equivalent to:
+	0.014144152111 km travelled by car
+CarbonTracker: Finished monitoring.
+[SAVED] Importance plot → DATA/qr_patchtst_run_01/importance_24h_fold2_patch_attention.png
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=11355.95 | val=3102.37
+  Epoch 02 | train=2798.23 | val=2952.85
+  Epoch 03 | train=2680.62 | val=2993.35
+  Epoch 04 | train=2640.04 | val=2990.99
+  Epoch 05 | train=2619.79 | val=2835.83
+  Epoch 06 | train=2587.48 | val=2947.38
+  Epoch 07 | train=2505.02 | val=3063.50
+  Epoch 08 | train=2454.07 | val=2907.43
+  Epoch 09 | train=2425.31 | val=2784.88
+  Epoch 10 | train=2409.12 | val=2773.05
+  Epoch 11 | train=2385.12 | val=2748.29
+  Epoch 12 | train=2361.05 | val=2748.68
+  Epoch 13 | train=2337.15 | val=2722.78
+  Epoch 14 | train=2281.27 | val=2816.12
+  Epoch 15 | train=2295.57 | val=2707.59
+  Epoch 16 | train=2337.04 | val=2707.65
+  Epoch 17 | train=2301.02 | val=2716.21
+  Epoch 18 | train=2251.01 | val=2656.65
+  Epoch 19 | train=2271.87 | val=2822.84
+  Epoch 20 | train=2264.05 | val=2751.83
+  Epoch 21 | train=2213.25 | val=2678.20
+  Epoch 22 | train=2192.06 | val=2652.83
+  Epoch 23 | train=2181.43 | val=2864.75
+  Epoch 24 | train=2168.38 | val=2989.46
+  Epoch 25 | train=2155.47 | val=2557.73
+  Epoch 26 | train=2154.36 | val=2704.24
+  Epoch 27 | train=2152.56 | val=2585.95
+  Epoch 28 | train=2163.25 | val=2617.70
+  Epoch 29 | train=2151.55 | val=2792.85
+  Epoch 30 | train=2113.30 | val=2808.04
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:02:01
+	Energy:	0.009017056817 kWh
+	CO2eq:	2.284124368124 g
+	This is equivalent to:
+	0.021386932286 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:02:01
+	Energy:	0.009017056817 kWh
+	CO2eq:	2.284124368124 g
+	This is equivalent to:
+	0.021386932286 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=11369.79 | val=3110.15
+  Epoch 02 | train=2798.50 | val=3050.66
+  Epoch 03 | train=2710.45 | val=2945.41
+  Epoch 04 | train=2633.86 | val=3040.46
+  Epoch 05 | train=2579.41 | val=2929.64
+  Epoch 06 | train=2469.55 | val=3075.32
+  Epoch 07 | train=2488.04 | val=2963.31
+  Epoch 08 | train=2437.70 | val=2850.78
+  Epoch 09 | train=2411.83 | val=2898.74
+  Epoch 10 | train=2382.93 | val=2795.83
+  Epoch 11 | train=2383.70 | val=2831.91
+  Epoch 12 | train=2352.44 | val=3115.25
+  Epoch 13 | train=2342.62 | val=2884.15
+  Epoch 14 | train=2337.99 | val=3005.61
+  Epoch 15 | train=2295.29 | val=2796.91
+  Epoch 16 | train=2288.35 | val=2754.25
+  Epoch 17 | train=2275.92 | val=2790.25
+  Epoch 18 | train=2271.92 | val=2866.17
+  Epoch 19 | train=2265.68 | val=2694.92
+  Epoch 20 | train=2269.85 | val=2701.81
+  Epoch 21 | train=2276.83 | val=2913.76
+  Epoch 22 | train=2279.41 | val=2820.45
+  Epoch 23 | train=2277.14 | val=2942.57
+  Epoch 24 | train=2265.24 | val=2829.77
+  Epoch 25 | train=2256.17 | val=2816.78
+  Epoch 26 | train=2250.07 | val=2687.27
+  Epoch 27 | train=2239.91 | val=2813.39
+  Epoch 28 | train=2233.58 | val=2690.91
+  Epoch 29 | train=2230.95 | val=2892.05
+  Epoch 30 | train=2232.84 | val=3015.20
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:02:00
+	Energy:	0.008977523090 kWh
+	CO2eq:	2.274110019672 g
+	This is equivalent to:
+	0.021293164978 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:02:00
+	Energy:	0.008977523090 kWh
+	CO2eq:	2.274110019672 g
+	This is equivalent to:
+	0.021293164978 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=8346.53 | val=3069.02
+  Epoch 02 | train=2827.80 | val=3147.64
+  Epoch 03 | train=2702.53 | val=3076.84
+  Epoch 04 | train=2593.76 | val=2945.38
+  Epoch 05 | train=2531.17 | val=3043.53
+  Epoch 06 | train=2499.33 | val=2880.37
+  Epoch 07 | train=2487.69 | val=2776.26
+  Epoch 08 | train=2479.89 | val=2962.56
+  Epoch 09 | train=2468.52 | val=3363.09
+  Epoch 10 | train=2461.20 | val=2999.49
+  Epoch 11 | train=2449.64 | val=2914.78
+  Epoch 12 | train=2378.14 | val=2672.76
+  Epoch 13 | train=2377.50 | val=2908.93
+  Epoch 14 | train=2379.84 | val=3108.54
+  Epoch 15 | train=2338.67 | val=2829.52
+  Epoch 16 | train=2304.42 | val=2795.50
+  Epoch 17 | train=2261.63 | val=2726.24
+  Epoch 18 | train=2244.00 | val=2837.19
+  Epoch 19 | train=2234.23 | val=2768.41
+  Epoch 20 | train=2227.35 | val=2911.94
+  Early stopping at epoch 20
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:01:52
+	Energy:	0.008539822651 kWh
+	CO2eq:	2.163235456253 g
+	This is equivalent to:
+	0.020255013635 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:01:52
+	Energy:	0.008539822651 kWh
+	CO2eq:	2.163235456253 g
+	This is equivalent to:
+	0.020255013635 km travelled by car
+CarbonTracker: Finished monitoring.
+[SAVED] Importance plot → DATA/qr_patchtst_run_01/importance_24h_fold3_patch_attention.png
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=8369.99 | val=3044.75
+  Epoch 02 | train=2775.82 | val=3107.30
+  Epoch 03 | train=2735.82 | val=3213.56
+  Epoch 04 | train=2713.11 | val=3173.74
+  Epoch 05 | train=2700.55 | val=3066.27
+  Epoch 06 | train=2616.75 | val=2965.75
+  Epoch 07 | train=2573.91 | val=2930.87
+  Epoch 08 | train=2539.07 | val=2897.48
+  Epoch 09 | train=2502.79 | val=3175.77
+  Epoch 10 | train=2501.58 | val=2942.81
+  Epoch 11 | train=2479.90 | val=2857.65
+  Epoch 12 | train=2449.42 | val=2811.60
+  Epoch 13 | train=2438.68 | val=2841.29
+  Epoch 14 | train=2404.74 | val=2903.38
+  Epoch 15 | train=2391.16 | val=2811.11
+  Epoch 16 | train=2399.42 | val=2841.46
+  Epoch 17 | train=2378.36 | val=2808.75
+  Epoch 18 | train=2346.08 | val=2817.80
+  Epoch 19 | train=2351.80 | val=2981.38
+  Epoch 20 | train=2336.44 | val=2782.01
+  Epoch 21 | train=2341.66 | val=2925.96
+  Epoch 22 | train=2410.88 | val=2776.08
+  Epoch 23 | train=2376.10 | val=3025.62
+  Epoch 24 | train=2347.94 | val=3015.40
+  Epoch 25 | train=2357.21 | val=2724.78
+  Epoch 26 | train=2349.21 | val=3014.32
+  Epoch 27 | train=2346.39 | val=3035.45
+  Epoch 28 | train=2326.32 | val=2793.48
+  Epoch 29 | train=2343.57 | val=2882.99
+  Epoch 30 | train=2315.65 | val=2703.84
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:02:49
+	Energy:	0.012900214265 kWh
+	CO2eq:	3.267772883719 g
+	This is equivalent to:
+	0.030597124379 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:02:49
+	Energy:	0.012900214265 kWh
+	CO2eq:	3.267772883719 g
+	This is equivalent to:
+	0.030597124379 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=8344.89 | val=3042.59
+  Epoch 02 | train=2849.27 | val=3108.55
+  Epoch 03 | train=2623.65 | val=2958.79
+  Epoch 04 | train=2547.77 | val=2862.05
+  Epoch 05 | train=2532.94 | val=2944.90
+  Epoch 06 | train=2517.47 | val=2823.38
+  Epoch 07 | train=2491.06 | val=2991.76
+  Epoch 08 | train=2459.26 | val=2875.82
+  Epoch 09 | train=2430.76 | val=2956.14
+  Epoch 10 | train=2391.96 | val=2899.49
+  Epoch 11 | train=2330.46 | val=2755.40
+  Epoch 12 | train=2304.36 | val=2887.72
+  Epoch 13 | train=2288.87 | val=2764.77
+  Epoch 14 | train=2287.44 | val=2769.48
+  Epoch 15 | train=2287.17 | val=3111.11
+  Epoch 16 | train=2283.28 | val=2794.13
+  Epoch 17 | train=2259.19 | val=2775.20
+  Epoch 18 | train=2248.60 | val=2894.75
+  Epoch 19 | train=2244.36 | val=2817.31
+  Early stopping at epoch 19
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:01:49
+	Energy:	0.008198003188 kWh
+	CO2eq:	2.076648648541 g
+	This is equivalent to:
+	0.019444275735 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:01:49
+	Energy:	0.008198003188 kWh
+	CO2eq:	2.076648648541 g
+	This is equivalent to:
+	0.019444275735 km travelled by car
+CarbonTracker: Finished monitoring.
+
+========================================
+>>> CROSS-VALIDATION: 168h
+========================================
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=18890.42 | val=15613.47
+  Epoch 02 | train=8864.88 | val=3316.41
+  Epoch 03 | train=2788.65 | val=2781.48
+  Epoch 04 | train=2724.89 | val=2753.92
+  Epoch 05 | train=2709.37 | val=2758.67
+  Epoch 06 | train=2702.96 | val=2703.81
+  Epoch 07 | train=2695.42 | val=2717.04
+  Epoch 08 | train=2686.74 | val=2717.55
+  Epoch 09 | train=2693.44 | val=2715.90
+  Epoch 10 | train=2698.32 | val=2738.16
+  Epoch 11 | train=2686.95 | val=2704.25
+  Epoch 12 | train=2661.33 | val=2717.96
+  Epoch 13 | train=2669.33 | val=2692.38
+  Epoch 14 | train=2669.68 | val=2707.55
+  Epoch 15 | train=2667.26 | val=2697.39
+  Epoch 16 | train=2663.13 | val=2684.08
+  Epoch 17 | train=2655.22 | val=2716.16
+  Epoch 18 | train=2652.49 | val=2720.64
+  Epoch 19 | train=2650.40 | val=2702.93
+  Epoch 20 | train=2652.00 | val=2714.88
+  Epoch 21 | train=2652.35 | val=2714.78
+  Epoch 22 | train=2645.96 | val=2722.99
+  Epoch 23 | train=2644.48 | val=2712.69
+  Epoch 24 | train=2638.18 | val=2717.81
+  Early stopping at epoch 24
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:02:03
+	Energy:	0.011344628669 kWh
+	CO2eq:	2.873725131908 g
+	This is equivalent to:
+	0.026907538688 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:02:03
+	Energy:	0.011344628669 kWh
+	CO2eq:	2.873725131908 g
+	This is equivalent to:
+	0.026907538688 km travelled by car
+CarbonTracker: Finished monitoring.
+[SAVED] Importance plot → DATA/qr_patchtst_run_01/importance_168h_fold1_patch_attention.png
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=18890.17 | val=15604.71
+  Epoch 02 | train=8851.76 | val=3268.42
+  Epoch 03 | train=2790.70 | val=2803.94
+  Epoch 04 | train=2726.88 | val=2809.18
+  Epoch 05 | train=2720.89 | val=2791.82
+  Epoch 06 | train=2718.24 | val=2803.44
+  Epoch 07 | train=2717.18 | val=2796.76
+  Epoch 08 | train=2713.85 | val=2786.66
+  Epoch 09 | train=2708.69 | val=2789.90
+  Epoch 10 | train=2701.48 | val=2774.15
+  Epoch 11 | train=2690.64 | val=2781.84
+  Epoch 12 | train=2690.75 | val=2786.70
+  Epoch 13 | train=2702.65 | val=2765.44
+  Epoch 14 | train=2697.34 | val=2758.22
+  Epoch 15 | train=2690.31 | val=2775.45
+  Epoch 16 | train=2688.51 | val=2796.08
+  Epoch 17 | train=2685.58 | val=2752.29
+  Epoch 18 | train=2683.02 | val=2744.19
+  Epoch 19 | train=2672.29 | val=2728.90
+  Epoch 20 | train=2671.22 | val=2733.79
+  Epoch 21 | train=2658.48 | val=2714.24
+  Epoch 22 | train=2652.83 | val=2709.02
+  Epoch 23 | train=2652.28 | val=2734.29
+  Epoch 24 | train=2643.83 | val=2733.52
+  Epoch 25 | train=2636.02 | val=2774.33
+  Epoch 26 | train=2628.43 | val=2769.66
+  Epoch 27 | train=2622.79 | val=2813.79
+  Epoch 28 | train=2604.24 | val=2768.53
+  Epoch 29 | train=2580.61 | val=2723.01
+  Epoch 30 | train=2570.00 | val=2741.05
+  Early stopping at epoch 30
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:02:33
+	Energy:	0.014149565405 kWh
+	CO2eq:	3.584247920167 g
+	This is equivalent to:
+	0.033560373784 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:02:33
+	Energy:	0.014149565405 kWh
+	CO2eq:	3.584247920167 g
+	This is equivalent to:
+	0.033560373784 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=18872.10 | val=15549.75
+  Epoch 02 | train=8819.00 | val=3270.00
+  Epoch 03 | train=2771.74 | val=2745.21
+  Epoch 04 | train=2699.07 | val=2708.63
+  Epoch 05 | train=2692.64 | val=2719.21
+  Epoch 06 | train=2690.18 | val=2888.66
+  Epoch 07 | train=2680.40 | val=2697.23
+  Epoch 08 | train=2664.65 | val=2691.98
+  Epoch 09 | train=2679.87 | val=2708.31
+  Epoch 10 | train=2688.48 | val=2706.38
+  Epoch 11 | train=2685.93 | val=2729.58
+  Epoch 12 | train=2689.81 | val=2718.82
+  Epoch 13 | train=2676.36 | val=2726.02
+  Epoch 14 | train=2673.94 | val=2740.18
+  Epoch 15 | train=2673.89 | val=2715.79
+  Epoch 16 | train=2662.66 | val=2703.81
+  Early stopping at epoch 16
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:01:21
+	Energy:	0.007642805692 kWh
+	CO2eq:	1.936010727021 g
+	This is equivalent to:
+	0.018127441264 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:01:21
+	Energy:	0.007642805692 kWh
+	CO2eq:	1.936010727021 g
+	This is equivalent to:
+	0.018127441264 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=13833.67 | val=3209.31
+  Epoch 02 | train=2749.18 | val=3047.47
+  Epoch 03 | train=2714.99 | val=3034.74
+  Epoch 04 | train=2722.62 | val=3133.54
+  Epoch 05 | train=2723.16 | val=3094.99
+  Epoch 06 | train=2720.43 | val=3132.17
+  Epoch 07 | train=2714.58 | val=3090.86
+  Epoch 08 | train=2697.55 | val=3150.35
+  Epoch 09 | train=2696.66 | val=3099.51
+  Epoch 10 | train=2697.07 | val=3136.50
+  Epoch 11 | train=2690.93 | val=3070.18
+  Early stopping at epoch 11
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:01:36
+	Energy:	0.009425932943 kWh
+	CO2eq:	2.387697401225 g
+	This is equivalent to:
+	0.022356717240 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:01:36
+	Energy:	0.009425932943 kWh
+	CO2eq:	2.387697401225 g
+	This is equivalent to:
+	0.022356717240 km travelled by car
+CarbonTracker: Finished monitoring.
+[SAVED] Importance plot → DATA/qr_patchtst_run_01/importance_168h_fold2_patch_attention.png
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=13737.55 | val=3231.53
+  Epoch 02 | train=2796.64 | val=3120.96
+  Epoch 03 | train=2761.55 | val=3118.86
+  Epoch 04 | train=2742.05 | val=3091.38
+  Epoch 05 | train=2727.28 | val=3022.27
+  Epoch 06 | train=2717.16 | val=3006.38
+  Epoch 07 | train=2720.74 | val=3125.77
+  Epoch 08 | train=2700.57 | val=3097.27
+  Epoch 09 | train=2692.71 | val=3270.20
+  Epoch 10 | train=2673.46 | val=3189.05
+  Epoch 11 | train=2654.13 | val=3024.44
+  Epoch 12 | train=2623.66 | val=3008.17
+  Epoch 13 | train=2598.26 | val=2991.21
+  Epoch 14 | train=2578.88 | val=2949.61
+  Epoch 15 | train=2565.91 | val=2970.38
+  Epoch 16 | train=2548.97 | val=2968.63
+  Epoch 17 | train=2516.22 | val=2940.71
+  Epoch 18 | train=2492.65 | val=2921.61
+  Epoch 19 | train=2455.86 | val=2916.56
+  Epoch 20 | train=2446.47 | val=2870.97
+  Epoch 21 | train=2437.69 | val=2864.88
+  Epoch 22 | train=2417.21 | val=2843.99
+  Epoch 23 | train=2393.07 | val=2819.57
+  Epoch 24 | train=2387.59 | val=2800.33
+  Epoch 25 | train=2384.79 | val=2806.19
+  Epoch 26 | train=2386.13 | val=2823.54
+  Epoch 27 | train=2360.64 | val=2808.02
+  Epoch 28 | train=2354.28 | val=2834.14
+  Epoch 29 | train=2340.33 | val=2797.43
+  Epoch 30 | train=2329.81 | val=2817.84
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:04:21
+	Energy:	0.025584759621 kWh
+	CO2eq:	6.480914348316 g
+	This is equivalent to:
+	0.060682718617 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:04:21
+	Energy:	0.025584759621 kWh
+	CO2eq:	6.480914348316 g
+	This is equivalent to:
+	0.060682718617 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=13770.24 | val=3207.54
+  Epoch 02 | train=2759.05 | val=3097.20
+  Epoch 03 | train=2718.46 | val=3175.60
+  Epoch 04 | train=2721.15 | val=3160.82
+  Epoch 05 | train=2717.03 | val=3099.22
+  Epoch 06 | train=2713.64 | val=3123.53
+  Epoch 07 | train=2697.83 | val=3086.64
+  Epoch 08 | train=2691.64 | val=3109.57
+  Epoch 09 | train=2686.21 | val=3108.66
+  Epoch 10 | train=2685.52 | val=3149.20
+  Epoch 11 | train=2685.65 | val=3173.85
+  Epoch 12 | train=2676.90 | val=3154.19
+  Epoch 13 | train=2675.60 | val=3110.37
+  Epoch 14 | train=2675.14 | val=3128.48
+  Epoch 15 | train=2675.75 | val=3118.90
+  Early stopping at epoch 15
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:02:10
+	Energy:	0.012798397721 kWh
+	CO2eq:	3.241981580362 g
+	This is equivalent to:
+	0.030355632775 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:02:10
+	Energy:	0.012798397721 kWh
+	CO2eq:	3.241981580362 g
+	This is equivalent to:
+	0.030355632775 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=9846.93 | val=3042.74
+  Epoch 02 | train=2830.30 | val=3027.12
+  Epoch 03 | train=2833.27 | val=3074.51
+  Epoch 04 | train=2833.81 | val=3061.24
+  Epoch 05 | train=2824.12 | val=3079.36
+  Epoch 06 | train=2820.64 | val=3119.19
+  Epoch 07 | train=2809.89 | val=3148.88
+  Epoch 08 | train=2800.25 | val=3078.23
+  Epoch 09 | train=2796.41 | val=3115.89
+  Epoch 10 | train=2794.95 | val=3094.61
+  Early stopping at epoch 10
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:02:03
+	Energy:	0.012275464555 kWh
+	CO2eq:	3.109516585126 g
+	This is equivalent to:
+	0.029115323831 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:02:03
+	Energy:	0.012275464555 kWh
+	CO2eq:	3.109516585126 g
+	This is equivalent to:
+	0.029115323831 km travelled by car
+CarbonTracker: Finished monitoring.
+[SAVED] Importance plot → DATA/qr_patchtst_run_01/importance_168h_fold3_patch_attention.png
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=9803.66 | val=3105.58
+  Epoch 02 | train=2866.42 | val=3039.95
+  Epoch 03 | train=2854.56 | val=3182.75
+  Epoch 04 | train=2840.28 | val=3145.40
+  Epoch 05 | train=2831.02 | val=3230.96
+  Epoch 06 | train=2827.50 | val=3198.90
+  Epoch 07 | train=2795.86 | val=3222.85
+  Epoch 08 | train=2777.96 | val=3196.95
+  Epoch 09 | train=2745.05 | val=3140.73
+  Epoch 10 | train=2711.33 | val=3141.18
+  Early stopping at epoch 10
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:02:03
+	Energy:	0.012224159012 kWh
+	CO2eq:	3.096520299980 g
+	This is equivalent to:
+	0.028993635768 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:02:03
+	Energy:	0.012224159012 kWh
+	CO2eq:	3.096520299980 g
+	This is equivalent to:
+	0.028993635768 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=9817.81 | val=3036.41
+  Epoch 02 | train=2876.49 | val=3155.92
+  Epoch 03 | train=2859.40 | val=3051.46
+  Epoch 04 | train=2838.45 | val=3060.82
+  Epoch 05 | train=2830.07 | val=3049.03
+  Epoch 06 | train=2811.06 | val=3046.75
+  Epoch 07 | train=2807.49 | val=3045.49
+  Epoch 08 | train=2803.18 | val=3109.99
+  Epoch 09 | train=2799.66 | val=3022.39
+  Epoch 10 | train=2776.65 | val=2995.92
+  Epoch 11 | train=2763.21 | val=3001.00
+  Epoch 12 | train=2741.73 | val=2952.13
+  Epoch 13 | train=2733.90 | val=2968.16
+  Epoch 14 | train=2725.72 | val=3009.71
+  Epoch 15 | train=2712.63 | val=2936.37
+  Epoch 16 | train=2688.66 | val=2939.58
+  Epoch 17 | train=2667.18 | val=2892.52
+  Epoch 18 | train=2652.26 | val=2899.33
+  Epoch 19 | train=2628.33 | val=2904.86
+  Epoch 20 | train=2596.39 | val=2829.70
+  Epoch 21 | train=2579.11 | val=2849.98
+  Epoch 22 | train=2544.13 | val=3028.62
+  Epoch 23 | train=2498.01 | val=2843.42
+  Epoch 24 | train=2464.92 | val=2925.31
+  Epoch 25 | train=2432.48 | val=2844.73
+  Epoch 26 | train=2407.69 | val=2743.66
+  Epoch 27 | train=2391.97 | val=2724.66
+  Epoch 28 | train=2371.36 | val=2648.94
+  Epoch 29 | train=2360.38 | val=2726.70
+  Epoch 30 | train=2336.36 | val=2630.62
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:06:11
+	Energy:	0.036799658739 kWh
+	CO2eq:	9.321777490567 g
+	This is equivalent to:
+	0.087282560773 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:06:11
+	Energy:	0.036799658739 kWh
+	CO2eq:	9.321777490567 g
+	This is equivalent to:
+	0.087282560773 km travelled by car
+CarbonTracker: Finished monitoring.
+
+========================================
+>>> CROSS-VALIDATION: 720h
+========================================
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=15428.19 | val=8718.26
+  Epoch 02 | train=3559.85 | val=2734.54
+  Epoch 03 | train=2600.53 | val=2727.37
+  Epoch 04 | train=2573.82 | val=2707.22
+  Epoch 05 | train=2552.07 | val=2704.19
+  Epoch 06 | train=2515.66 | val=2638.43
+  Epoch 07 | train=2436.62 | val=2575.60
+  Epoch 08 | train=2327.89 | val=2496.00
+  Epoch 09 | train=2177.38 | val=2459.80
+  Epoch 10 | train=2008.11 | val=2381.38
+  Epoch 11 | train=1820.87 | val=2368.58
+  Epoch 12 | train=1679.93 | val=2376.24
+  Epoch 13 | train=1581.72 | val=2428.26
+  Epoch 14 | train=1518.26 | val=2412.00
+  Epoch 15 | train=1471.62 | val=2494.81
+  Epoch 16 | train=1402.23 | val=2503.87
+  Epoch 17 | train=1366.66 | val=2499.27
+  Epoch 18 | train=1339.67 | val=2496.49
+  Epoch 19 | train=1314.58 | val=2524.63
+  Early stopping at epoch 19
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:06:20
+	Energy:	0.045683690340 kWh
+	CO2eq:	11.572205039354 g
+	This is equivalent to:
+	0.108353979769 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:06:20
+	Energy:	0.045683690340 kWh
+	CO2eq:	11.572205039354 g
+	This is equivalent to:
+	0.108353979769 km travelled by car
+CarbonTracker: Finished monitoring.
+[SAVED] Importance plot → DATA/qr_patchtst_run_01/importance_720h_fold1_patch_attention.png
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=15477.80 | val=8893.30
+  Epoch 02 | train=3643.12 | val=2755.65
+  Epoch 03 | train=2603.03 | val=2749.39
+  Epoch 04 | train=2576.39 | val=2729.54
+  Epoch 05 | train=2552.79 | val=2733.16
+  Epoch 06 | train=2520.89 | val=2658.52
+  Epoch 07 | train=2461.22 | val=2620.93
+  Epoch 08 | train=2367.68 | val=2557.44
+  Epoch 09 | train=2238.51 | val=2474.56
+  Epoch 10 | train=2061.72 | val=2411.40
+  Epoch 11 | train=1885.73 | val=2378.30
+  Epoch 12 | train=1751.95 | val=2433.63
+  Epoch 13 | train=1643.80 | val=2399.15
+  Epoch 14 | train=1565.22 | val=2405.08
+  Epoch 15 | train=1516.83 | val=2404.70
+  Epoch 16 | train=1459.84 | val=2434.53
+  Epoch 17 | train=1429.33 | val=2425.33
+  Epoch 18 | train=1404.79 | val=2460.86
+  Epoch 19 | train=1374.38 | val=2435.13
+  Early stopping at epoch 19
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:06:20
+	Energy:	0.045744635772 kWh
+	CO2eq:	11.587643219193 g
+	This is equivalent to:
+	0.108498532015 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:06:20
+	Energy:	0.045744635772 kWh
+	CO2eq:	11.587643219193 g
+	This is equivalent to:
+	0.108498532015 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=15467.30 | val=8806.94
+  Epoch 02 | train=3574.84 | val=2752.03
+  Epoch 03 | train=2605.10 | val=2734.20
+  Epoch 04 | train=2578.89 | val=2726.20
+  Epoch 05 | train=2560.74 | val=2721.20
+  Epoch 06 | train=2526.70 | val=2667.34
+  Epoch 07 | train=2446.68 | val=2583.15
+  Epoch 08 | train=2315.23 | val=2475.39
+  Epoch 09 | train=2147.71 | val=2361.70
+  Epoch 10 | train=1923.13 | val=2318.71
+  Epoch 11 | train=1754.43 | val=2333.12
+  Epoch 12 | train=1636.44 | val=2389.69
+  Epoch 13 | train=1557.48 | val=2372.05
+  Epoch 14 | train=1500.30 | val=2395.58
+  Epoch 15 | train=1438.37 | val=2374.48
+  Epoch 16 | train=1401.21 | val=2417.16
+  Epoch 17 | train=1373.50 | val=2387.99
+  Epoch 18 | train=1350.03 | val=2494.09
+  Early stopping at epoch 18
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:06:01
+	Energy:	0.043870661093 kWh
+	CO2eq:	11.112943844907 g
+	This is equivalent to:
+	0.104053781319 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:06:01
+	Energy:	0.043870661093 kWh
+	CO2eq:	11.112943844907 g
+	This is equivalent to:
+	0.104053781319 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=9036.54 | val=3314.49
+  Epoch 02 | train=2693.95 | val=3345.73
+  Epoch 03 | train=2645.56 | val=3164.15
+  Epoch 04 | train=2513.64 | val=2890.77
+  Epoch 05 | train=2203.34 | val=2699.76
+  Epoch 06 | train=1949.66 | val=2682.13
+  Epoch 07 | train=1804.88 | val=2683.87
+  Epoch 08 | train=1719.36 | val=2685.65
+  Epoch 09 | train=1665.55 | val=2725.50
+  Epoch 10 | train=1624.86 | val=2764.06
+  Epoch 11 | train=1558.44 | val=2835.27
+  Epoch 12 | train=1522.84 | val=2783.88
+  Epoch 13 | train=1489.22 | val=2794.29
+  Epoch 14 | train=1454.43 | val=2772.23
+  Early stopping at epoch 14
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:09:21
+	Energy:	0.067957347939 kWh
+	CO2eq:	17.214379101472 g
+	This is equivalent to:
+	0.161183324920 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:09:21
+	Energy:	0.067957347939 kWh
+	CO2eq:	17.214379101472 g
+	This is equivalent to:
+	0.161183324920 km travelled by car
+CarbonTracker: Finished monitoring.
+[SAVED] Importance plot → DATA/qr_patchtst_run_01/importance_720h_fold2_patch_attention.png
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=9013.74 | val=3277.22
+  Epoch 02 | train=2704.03 | val=3295.99
+  Epoch 03 | train=2679.64 | val=3374.46
+  Epoch 04 | train=2641.56 | val=3146.79
+  Epoch 05 | train=2501.02 | val=2979.42
+  Epoch 06 | train=2263.04 | val=2844.91
+  Epoch 07 | train=1964.35 | val=2621.86
+  Epoch 08 | train=1791.46 | val=2815.68
+  Epoch 09 | train=1700.97 | val=2760.68
+  Epoch 10 | train=1645.87 | val=2782.56
+  Epoch 11 | train=1603.09 | val=2821.79
+  Epoch 12 | train=1526.82 | val=2858.66
+  Epoch 13 | train=1488.31 | val=2912.76
+  Epoch 14 | train=1452.86 | val=2888.05
+  Epoch 15 | train=1419.63 | val=2803.61
+  Early stopping at epoch 15
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:09:59
+	Energy:	0.072266188335 kWh
+	CO2eq:	18.305858011688 g
+	This is equivalent to:
+	0.171403164903 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:09:59
+	Energy:	0.072266188335 kWh
+	CO2eq:	18.305858011688 g
+	This is equivalent to:
+	0.171403164903 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=9001.39 | val=3398.28
+  Epoch 02 | train=2705.86 | val=3417.99
+  Epoch 03 | train=2682.13 | val=3298.39
+  Epoch 04 | train=2640.70 | val=3077.16
+  Epoch 05 | train=2484.63 | val=2898.73
+  Epoch 06 | train=2282.87 | val=2798.50
+  Epoch 07 | train=2041.35 | val=2680.01
+  Epoch 08 | train=1853.31 | val=2653.63
+  Epoch 09 | train=1755.91 | val=2663.67
+  Epoch 10 | train=1688.50 | val=2706.49
+  Epoch 11 | train=1629.45 | val=2731.97
+  Epoch 12 | train=1572.57 | val=2779.97
+  Epoch 13 | train=1495.92 | val=2755.19
+  Epoch 14 | train=1456.13 | val=2728.57
+  Epoch 15 | train=1428.12 | val=2779.70
+  Epoch 16 | train=1398.86 | val=2823.87
+  Early stopping at epoch 16
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:10:40
+	Energy:	0.077033874414 kWh
+	CO2eq:	19.513567819419 g
+	This is equivalent to:
+	0.182711309171 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:10:40
+	Energy:	0.077033874414 kWh
+	CO2eq:	19.513567819419 g
+	This is equivalent to:
+	0.182711309171 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=6651.69 | val=3183.68
+  Epoch 02 | train=2802.38 | val=3245.71
+  Epoch 03 | train=2710.03 | val=3058.15
+  Epoch 04 | train=2386.99 | val=2743.00
+  Epoch 05 | train=2120.22 | val=2677.92
+  Epoch 06 | train=2004.00 | val=2781.22
+  Epoch 07 | train=1936.13 | val=2672.69
+  Epoch 08 | train=1883.80 | val=2741.29
+  Epoch 09 | train=1828.49 | val=2826.33
+  Epoch 10 | train=1774.43 | val=2890.15
+  Epoch 11 | train=1722.85 | val=2925.33
+  Epoch 12 | train=1642.96 | val=2975.73
+  Epoch 13 | train=1600.32 | val=3014.39
+  Epoch 14 | train=1563.27 | val=3041.28
+  Epoch 15 | train=1533.66 | val=3008.51
+  Early stopping at epoch 15
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:15:00
+	Energy:	0.107957956218 kWh
+	CO2eq:	27.346993985706 g
+	This is equivalent to:
+	0.256057996121 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:15:00
+	Energy:	0.107957956218 kWh
+	CO2eq:	27.346993985706 g
+	This is equivalent to:
+	0.256057996121 km travelled by car
+CarbonTracker: Finished monitoring.
+[SAVED] Importance plot → DATA/qr_patchtst_run_01/importance_720h_fold3_patch_attention.png
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=6665.81 | val=3263.00
+  Epoch 02 | train=2807.57 | val=3186.45
+  Epoch 03 | train=2713.75 | val=3060.77
+  Epoch 04 | train=2305.97 | val=2622.84
+  Epoch 05 | train=2063.52 | val=2651.31
+  Epoch 06 | train=1960.05 | val=2652.38
+  Epoch 07 | train=1890.06 | val=2767.88
+  Epoch 08 | train=1826.54 | val=2775.59
+  Epoch 09 | train=1738.63 | val=2781.09
+  Epoch 10 | train=1686.09 | val=2824.04
+  Epoch 11 | train=1641.43 | val=2862.50
+  Epoch 12 | train=1595.76 | val=2906.38
+  Early stopping at epoch 12
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:12:01
+	Energy:	0.086410952844 kWh
+	CO2eq:	21.888889809633 g
+	This is equivalent to:
+	0.204952151776 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:12:01
+	Energy:	0.086410952844 kWh
+	CO2eq:	21.888889809633 g
+	This is equivalent to:
+	0.204952151776 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=6676.18 | val=3238.44
+  Epoch 02 | train=2797.45 | val=3077.49
+  Epoch 03 | train=2689.03 | val=3025.74
+  Epoch 04 | train=2404.52 | val=2880.35
+  Epoch 05 | train=2115.36 | val=2711.84
+  Epoch 06 | train=1974.39 | val=2795.25
+  Epoch 07 | train=1883.06 | val=2683.79
+  Epoch 08 | train=1818.44 | val=2762.42
+  Epoch 09 | train=1758.28 | val=2794.60
+  Epoch 10 | train=1697.01 | val=2863.11
+  Epoch 11 | train=1652.07 | val=2830.99
+  Epoch 12 | train=1566.65 | val=2819.48
+  Epoch 13 | train=1528.83 | val=2923.18
+  Epoch 14 | train=1492.62 | val=2923.75
+  Epoch 15 | train=1462.99 | val=2927.77
+  Early stopping at epoch 15
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:14:59
+	Energy:	0.107872155599 kWh
+	CO2eq:	27.325259700445 g
+	This is equivalent to:
+	0.255854491577 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:14:59
+	Energy:	0.107872155599 kWh
+	CO2eq:	27.325259700445 g
+	This is equivalent to:
+	0.255854491577 km travelled by car
+CarbonTracker: Finished monitoring.
+[SAVED] Feature importance → DATA/qr_patchtst_run_01/feature_importance.csv
+
+========================================
+>>> FINAL TEST EVALUATION
+========================================
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=6852.58 | val=3300.29
+  Epoch 02 | train=2830.27 | val=2940.86
+  Epoch 03 | train=2737.15 | val=3204.53
+  Epoch 04 | train=2680.91 | val=3504.05
+  Epoch 05 | train=2700.44 | val=3166.25
+  Epoch 06 | train=2608.38 | val=3394.49
+  Epoch 07 | train=2552.88 | val=3206.84
+  Epoch 08 | train=2508.87 | val=2856.46
+  Epoch 09 | train=2468.16 | val=2805.04
+  Epoch 10 | train=2480.73 | val=2909.60
+  Epoch 11 | train=2474.70 | val=3104.89
+  Epoch 12 | train=2453.78 | val=2674.24
+  Epoch 13 | train=2454.39 | val=2825.22
+  Epoch 14 | train=2438.06 | val=2882.11
+  Epoch 15 | train=2436.66 | val=3065.89
+  Epoch 16 | train=2405.23 | val=3035.00
+  Epoch 17 | train=2368.26 | val=2915.74
+  Epoch 18 | train=2356.28 | val=2882.03
+  Epoch 19 | train=2345.48 | val=2950.68
+  Epoch 20 | train=2338.30 | val=2801.24
+  Early stopping at epoch 20
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:02:56
+	Energy:	0.012143639441 kWh
+	CO2eq:	3.076123765081 g
+	This is equivalent to:
+	0.028802656976 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:02:56
+	Energy:	0.012143639441 kWh
+	CO2eq:	3.076123765081 g
+	This is equivalent to:
+	0.028802656976 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=6892.15 | val=3409.40
+  Epoch 02 | train=2928.81 | val=3045.27
+  Epoch 03 | train=2785.59 | val=3163.03
+  Epoch 04 | train=2624.92 | val=3132.08
+  Epoch 05 | train=2570.04 | val=2891.13
+  Epoch 06 | train=2560.72 | val=3132.22
+  Epoch 07 | train=2564.69 | val=2904.90
+  Epoch 08 | train=2522.18 | val=2876.59
+  Epoch 09 | train=2497.87 | val=2899.56
+  Epoch 10 | train=2495.56 | val=2837.52
+  Epoch 11 | train=2484.47 | val=2929.34
+  Epoch 12 | train=2466.52 | val=2774.27
+  Epoch 13 | train=2417.13 | val=2695.40
+  Epoch 14 | train=2385.40 | val=2995.84
+  Epoch 15 | train=2360.38 | val=3070.45
+  Epoch 16 | train=2346.30 | val=2823.58
+  Epoch 17 | train=2323.02 | val=2495.28
+  Epoch 18 | train=2323.77 | val=2620.51
+  Epoch 19 | train=2346.72 | val=2778.36
+  Epoch 20 | train=2320.85 | val=2587.98
+  Epoch 21 | train=2314.05 | val=2497.20
+  Epoch 22 | train=2278.21 | val=2595.35
+  Epoch 23 | train=2238.94 | val=2530.42
+  Epoch 24 | train=2222.52 | val=2558.38
+  Epoch 25 | train=2208.92 | val=2582.67
+  Early stopping at epoch 25
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:03:49
+	Energy:	0.015303375447 kWh
+	CO2eq:	3.876521295634 g
+	This is equivalent to:
+	0.036297015877 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:03:49
+	Energy:	0.015303375447 kWh
+	CO2eq:	3.876521295634 g
+	This is equivalent to:
+	0.036297015877 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=6882.85 | val=3228.56
+  Epoch 02 | train=2846.12 | val=2967.05
+  Epoch 03 | train=2756.73 | val=3138.46
+  Epoch 04 | train=2669.62 | val=3129.50
+  Epoch 05 | train=2585.88 | val=3000.90
+  Epoch 06 | train=2552.67 | val=2920.47
+  Epoch 07 | train=2534.54 | val=3061.28
+  Epoch 08 | train=2519.69 | val=2946.36
+  Epoch 09 | train=2506.62 | val=3500.07
+  Epoch 10 | train=2467.02 | val=2690.43
+  Epoch 11 | train=2452.71 | val=2924.65
+  Epoch 12 | train=2448.04 | val=2663.04
+  Epoch 13 | train=2434.00 | val=2631.20
+  Epoch 14 | train=2414.40 | val=2815.77
+  Epoch 15 | train=2358.06 | val=2800.41
+  Epoch 16 | train=2357.34 | val=2843.25
+  Epoch 17 | train=2385.19 | val=2653.59
+  Epoch 18 | train=2344.37 | val=2759.52
+  Epoch 19 | train=2332.30 | val=2842.51
+  Epoch 20 | train=2311.48 | val=2824.32
+  Epoch 21 | train=2276.83 | val=2595.88
+  Epoch 22 | train=2261.65 | val=2643.51
+  Epoch 23 | train=2250.87 | val=2685.81
+  Epoch 24 | train=2236.69 | val=2509.38
+  Epoch 25 | train=2228.52 | val=2687.51
+  Epoch 26 | train=2225.25 | val=2616.01
+  Epoch 27 | train=2217.66 | val=2757.32
+  Epoch 28 | train=2214.86 | val=2597.29
+  Epoch 29 | train=2173.34 | val=2567.69
+  Epoch 30 | train=2157.99 | val=2712.52
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:03:54
+	Energy:	0.016827199855 kWh
+	CO2eq:	4.262523572642 g
+	This is equivalent to:
+	0.039911269407 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:03:54
+	Energy:	0.016827199855 kWh
+	CO2eq:	4.262523572642 g
+	This is equivalent to:
+	0.039911269407 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=7906.70 | val=3294.28
+  Epoch 02 | train=2878.83 | val=3355.86
+  Epoch 03 | train=2880.38 | val=3331.15
+  Epoch 04 | train=2870.66 | val=3291.09
+  Epoch 05 | train=2868.47 | val=3375.34
+  Epoch 06 | train=2864.52 | val=3335.03
+  Epoch 07 | train=2858.08 | val=3330.17
+  Epoch 08 | train=2857.87 | val=3396.78
+  Epoch 09 | train=2844.22 | val=3367.86
+  Epoch 10 | train=2838.67 | val=3408.20
+  Epoch 11 | train=2834.70 | val=3401.11
+  Epoch 12 | train=2830.68 | val=3337.85
+  Early stopping at epoch 12
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:03:05
+	Energy:	0.018025725857 kWh
+	CO2eq:	4.566124015978 g
+	This is equivalent to:
+	0.042753970187 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:03:05
+	Energy:	0.018025725857 kWh
+	CO2eq:	4.566124015978 g
+	This is equivalent to:
+	0.042753970187 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=7884.38 | val=3276.14
+  Epoch 02 | train=2867.64 | val=3201.53
+  Epoch 03 | train=2873.66 | val=3368.20
+  Epoch 04 | train=2871.00 | val=3375.16
+  Epoch 05 | train=2869.00 | val=3402.76
+  Epoch 06 | train=2865.33 | val=3445.46
+  Epoch 07 | train=2854.94 | val=3340.92
+  Epoch 08 | train=2848.40 | val=3347.90
+  Epoch 09 | train=2846.67 | val=3342.30
+  Epoch 10 | train=2843.54 | val=3368.93
+  Early stopping at epoch 10
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:02:33
+	Energy:	0.015125652442 kWh
+	CO2eq:	3.831502011184 g
+	This is equivalent to:
+	0.035875486996 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:02:33
+	Energy:	0.015125652442 kWh
+	CO2eq:	3.831502011184 g
+	This is equivalent to:
+	0.035875486996 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=7877.78 | val=3240.91
+  Epoch 02 | train=2905.94 | val=3172.06
+  Epoch 03 | train=2904.19 | val=3235.73
+  Epoch 04 | train=2890.31 | val=3264.82
+  Epoch 05 | train=2857.91 | val=3246.79
+  Epoch 06 | train=2813.86 | val=3247.56
+  Epoch 07 | train=2767.20 | val=3194.01
+  Epoch 08 | train=2721.31 | val=3114.93
+  Epoch 09 | train=2679.21 | val=3086.84
+  Epoch 10 | train=2647.27 | val=3129.68
+  Epoch 11 | train=2619.54 | val=3033.39
+  Epoch 12 | train=2588.63 | val=2981.71
+  Epoch 13 | train=2567.74 | val=2858.87
+  Epoch 14 | train=2576.04 | val=3325.35
+  Epoch 15 | train=2618.26 | val=2959.87
+  Epoch 16 | train=2564.64 | val=2953.01
+  Epoch 17 | train=2554.19 | val=2905.06
+  Epoch 18 | train=2541.03 | val=2920.15
+  Epoch 19 | train=2517.86 | val=2861.80
+  Epoch 20 | train=2503.01 | val=2830.35
+  Epoch 21 | train=2490.62 | val=2906.17
+  Epoch 22 | train=2479.51 | val=2840.72
+  Epoch 23 | train=2473.20 | val=2776.96
+  Epoch 24 | train=2462.00 | val=2832.86
+  Epoch 25 | train=2458.86 | val=2762.97
+  Epoch 26 | train=2447.62 | val=2724.27
+  Epoch 27 | train=2441.41 | val=2728.91
+  Epoch 28 | train=2430.07 | val=2780.86
+  Epoch 29 | train=2421.94 | val=2753.38
+  Epoch 30 | train=2412.20 | val=2791.13
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:07:38
+	Energy:	0.045302011043 kWh
+	CO2eq:	11.475521276458 g
+	This is equivalent to:
+	0.107448701090 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:07:38
+	Energy:	0.045302011043 kWh
+	CO2eq:	11.475521276458 g
+	This is equivalent to:
+	0.107448701090 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=5598.89 | val=3816.77
+  Epoch 02 | train=2821.66 | val=3503.32
+  Epoch 03 | train=2499.28 | val=3041.58
+  Epoch 04 | train=2151.20 | val=2782.66
+  Epoch 05 | train=2036.07 | val=3027.30
+  Epoch 06 | train=1948.75 | val=3082.91
+  Epoch 07 | train=1875.20 | val=2944.80
+  Epoch 08 | train=1795.22 | val=3083.26
+  Epoch 09 | train=1696.29 | val=2997.52
+  Epoch 10 | train=1643.47 | val=3151.20
+  Epoch 11 | train=1601.22 | val=3145.60
+  Epoch 12 | train=1561.85 | val=3138.27
+  Early stopping at epoch 12
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:15:28
+	Energy:	0.110702713848 kWh
+	CO2eq:	28.042272712938 g
+	This is equivalent to:
+	0.262568096563 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:15:28
+	Energy:	0.110702713848 kWh
+	CO2eq:	28.042272712938 g
+	This is equivalent to:
+	0.262568096563 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=5603.84 | val=3707.36
+  Epoch 02 | train=2766.47 | val=3539.14
+  Epoch 03 | train=2379.94 | val=2816.06
+  Epoch 04 | train=2130.43 | val=2758.16
+  Epoch 05 | train=2019.37 | val=2923.32
+  Epoch 06 | train=1948.97 | val=2995.80
+  Epoch 07 | train=1886.78 | val=3066.05
+  Epoch 08 | train=1829.10 | val=2936.22
+  Epoch 09 | train=1726.71 | val=2862.70
+  Epoch 10 | train=1670.89 | val=2928.19
+  Epoch 11 | train=1618.62 | val=2923.22
+  Epoch 12 | train=1573.22 | val=2835.59
+  Early stopping at epoch 12
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:15:28
+	Energy:	0.111074315716 kWh
+	CO2eq:	28.136403746930 g
+	This is equivalent to:
+	0.263449473286 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:15:28
+	Energy:	0.111074315716 kWh
+	CO2eq:	28.136403746930 g
+	This is equivalent to:
+	0.263449473286 km travelled by car
+CarbonTracker: Finished monitoring.
+CarbonTracker: WARNING - No API keys provided. Skipping intensity provider initialization.
+CarbonTracker: The following components were found: GPU with device(s) NVIDIA A40.
+CarbonTracker: WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.
+  Epoch 01 | train=5565.26 | val=3782.32
+  Epoch 02 | train=2805.81 | val=3358.78
+  Epoch 03 | train=2465.75 | val=2993.71
+  Epoch 04 | train=2147.93 | val=2839.45
+  Epoch 05 | train=2048.25 | val=2859.05
+  Epoch 06 | train=1969.11 | val=2920.95
+  Epoch 07 | train=1893.80 | val=2941.71
+  Epoch 08 | train=1814.52 | val=3072.22
+  Epoch 09 | train=1709.94 | val=3046.77
+  Epoch 10 | train=1650.40 | val=3035.28
+  Epoch 11 | train=1598.36 | val=3079.31
+  Epoch 12 | train=1543.93 | val=2888.11
+  Early stopping at epoch 12
+CarbonTracker: 
+Predicted consumption for 1 epoch(s):
+	Time:	0:15:28
+	Energy:	0.110825377249 kWh
+	CO2eq:	28.073344765408 g
+	This is equivalent to:
+	0.262859033384 km travelled by car
+CarbonTracker: Average carbon intensity during training was 253.31 gCO2eq/kWh. 
+CarbonTracker: 
+Actual consumption for 1 epoch(s):
+	Time:	0:15:28
+	Energy:	0.110825377249 kWh
+	CO2eq:	28.073344765408 g
+	This is equivalent to:
+	0.262859033384 km travelled by car
+CarbonTracker: Finished monitoring.
+[SAVED] Carbon summary → DATA/qr_patchtst_run_01/carbon_summary.csv
+
+===== ALL TASKS COMPLETE =====
+  Hyperparameters     → DATA/qr_patchtst_run_01/best_hyperparams.json
+  Carbon summary      → DATA/qr_patchtst_run_01/carbon_summary.csv
+  Feature importance  → DATA/qr_patchtst_run_01/feature_importance.csv
+  CV results          → DATA/qr_patchtst_run_01/cv_results.csv
+  Test results        → DATA/qr_patchtst_run_01/test_results.csv
+  Full run log        → DATA/qr_patchtst_run_01/run_log.txt

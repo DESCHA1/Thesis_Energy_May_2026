@@ -1,0 +1,9 @@
+2026-05-08 17:45:22 - carbontracker version 2.4.4
+2026-05-08 17:45:22 - Only predicted and actual consumptions are multiplied by a PUE coefficient of 1.58 (Daniel Bizo, 2023, Uptime Institute Global Data Center Survey).
+2026-05-08 17:45:22 - The following components were found: GPU with device(s) NVIDIA A40.
+2026-05-08 17:45:22 - Monitoring thread started.
+2026-05-08 17:46:59 - Epoch 1:
+2026-05-08 17:46:59 - Duration: 0:01:36.36
+2026-05-08 17:46:59 - Average power usage (W) for gpu: 222.87461458333334
+2026-05-08 17:46:59 - Carbon intensities (gCO2eq/kWh) fetched every 900 s at detected location Tilburg, North Brabant, NL: [253.31152]
+2026-05-08 17:46:59 - Monitoring thread ended.

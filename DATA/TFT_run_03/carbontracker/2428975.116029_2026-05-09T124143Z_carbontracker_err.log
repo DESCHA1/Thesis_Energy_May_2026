@@ -1,0 +1,2 @@
+2026-05-09 12:41:43,956 - MainThread - WARNING - No API keys provided. Skipping intensity provider initialization.
+2026-05-09 12:41:44,131 - MainThread - WARNING - No carbon intensity provider specified. Using average carbon intensity for NL: 253.31 gCO2eq/kWh.

@@ -1,0 +1,27 @@
+2026-05-09 13:37:44 - carbontracker version 2.4.4
+2026-05-09 13:37:44 - Only predicted and actual consumptions are multiplied by a PUE coefficient of 1.58 (Daniel Bizo, 2023, Uptime Institute Global Data Center Survey).
+2026-05-09 13:37:44 - The following components were found: GPU with device(s) NVIDIA A40.
+2026-05-09 13:37:44 - Monitoring thread started.
+2026-05-09 13:53:34 - Epoch 1:
+2026-05-09 13:53:34 - Duration: 0:15:49.93
+2026-05-09 13:53:34 - Average power usage (W) for gpu: 77.24095987328407
+2026-05-09 13:53:34 - Carbon intensities (gCO2eq/kWh) fetched every 900 s at detected location Tilburg, North Brabant, NL: [253.31152]
+2026-05-09 13:53:34 - Monitoring thread ended.
+2026-05-09 14:43:45 - carbontracker version 2.4.4
+2026-05-09 14:43:45 - Only predicted and actual consumptions are multiplied by a PUE coefficient of 1.58 (Daniel Bizo, 2023, Uptime Institute Global Data Center Survey).
+2026-05-09 14:43:45 - The following components were found: GPU with device(s) NVIDIA A40.
+2026-05-09 14:43:45 - Monitoring thread started.
+2026-05-09 15:10:12 - Epoch 1:
+2026-05-09 15:10:12 - Duration: 0:26:26.50
+2026-05-09 15:10:12 - Average power usage (W) for gpu: 77.42825806451613
+2026-05-09 15:10:12 - Carbon intensities (gCO2eq/kWh) fetched every 900 s at detected location Tilburg, North Brabant, NL: [253.31152]
+2026-05-09 15:10:12 - Monitoring thread ended.
+2026-05-09 15:53:42 - carbontracker version 2.4.4
+2026-05-09 15:53:42 - Only predicted and actual consumptions are multiplied by a PUE coefficient of 1.58 (Daniel Bizo, 2023, Uptime Institute Global Data Center Survey).
+2026-05-09 15:53:42 - The following components were found: GPU with device(s) NVIDIA A40.
+2026-05-09 15:53:42 - Monitoring thread started.
+2026-05-09 16:37:15 - Epoch 1:
+2026-05-09 16:37:15 - Duration: 0:43:33.00
+2026-05-09 16:37:15 - Average power usage (W) for gpu: 77.46698348059931
+2026-05-09 16:37:15 - Carbon intensities (gCO2eq/kWh) fetched every 900 s at detected location Tilburg, North Brabant, NL: [253.31152]
+2026-05-09 16:37:15 - Monitoring thread ended.
