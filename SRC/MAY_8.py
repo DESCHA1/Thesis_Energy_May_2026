@@ -19,9 +19,9 @@ import matplotlib.pyplot as plt
 from carbontracker.tracker import CarbonTracker
 from carbontracker import parser as ct_parser
 
-# ==============================================================================
-# LOGGING SETUP — all stdout + stderr also written to a log file
-# ==============================================================================
+
+# 0. Logging Setup
+
 RUN_DIR = "DATA/run_03"
 os.makedirs(RUN_DIR, exist_ok=True)
 LOG_PATH = f"{RUN_DIR}/run_log.txt"
@@ -48,9 +48,9 @@ class Tee:
 sys.stdout = Tee(sys.stdout, LOG_PATH)
 sys.stderr = Tee(sys.stderr, LOG_PATH)
 
-# ==============================================================================
-# 1. SETUP & CONFIG
-# ==============================================================================
+
+# 1. Setup and Configuration
+
 CONFIG = {
     "dataset_path": "DATA/final_data_with_features.csv",
     "results_path": f"{RUN_DIR}/optimized_final_results.csv",
@@ -69,9 +69,8 @@ CONFIG = {
 
 SCALE_FEATURES = ["wind_u", "wind_v", "ghi"]
 
-# ==============================================================================
-# CARBON TRACKING HELPER
-# ==============================================================================
+# Carbon Tracker
+
 carbon_records = []   # accumulated across the whole run
 
 def make_tracker(label: str) -> CarbonTracker:
@@ -121,9 +120,9 @@ def save_carbon_summary():
     print(f"[SAVED] Carbon summary → {CONFIG['carbon_summary_path']}")
 
 
-# ==============================================================================
+
 # FEATURE IMPORTANCE HELPER
-# ==============================================================================
+
 importance_records = []   # accumulated across the whole run
 
 def record_importance(interpretation: dict, label: str,
@@ -166,9 +165,9 @@ def save_importance_csv():
         print("[WARN] No feature importance records to save.")
 
 
-# ==============================================================================
+
 # 2. UTILITY FUNCTIONS
-# ==============================================================================
+
 def scale_fold(train_df, val_df, features):
     scaler = StandardScaler()
     train_scaled = train_df.copy()
@@ -196,9 +195,9 @@ def append_csv(df_row: dict, path: str):
     )
 
 
-# ==============================================================================
+
 # 3. DATA PREP
-# ==============================================================================
+
 df = pd.read_csv(CONFIG["dataset_path"])
 df["utc_timestamp"] = pd.to_datetime(df["utc_timestamp"])
 df = df.sort_values("utc_timestamp").reset_index(drop=True)
@@ -220,9 +219,9 @@ TFT_FEATURES = {
 }
 
 
-# ==============================================================================
+
 # 4. OPTUNA OBJECTIVE
-# ==============================================================================
+
 def objective(trial, horizon):
     encoder_len = horizon * CONFIG["encoder_multiplier"]
 
@@ -270,9 +269,9 @@ def objective(trial, horizon):
     return trainer.callback_metrics["val_loss"].item()
 
 
-# ==============================================================================
+
 # 5. OPTUNA EXECUTION
-# ==============================================================================
+
 print("\n--- Starting Optuna Hyperparameter Optimization ---", flush=True)
 best_params_dict = {}
 
@@ -290,9 +289,9 @@ for tune_horizon in [24, 168]:
 print("\n>>> Applying 168h optimized parameters to 720h horizon", flush=True)
 best_params_dict[720] = best_params_dict[168].copy()
 
-# ------------------------------------------------------------------
-# SAVE BEST HYPERPARAMETERS TO JSON  ← NEW
-# ------------------------------------------------------------------
+
+# SAVE BEST HYPERPARAMETERS TO JSON 
+
 serialisable = {str(k): v for k, v in best_params_dict.items()}
 with open(CONFIG["best_params_path"], "w") as fh:
     json.dump(serialisable, fh, indent=2)
@@ -305,9 +304,8 @@ for horizon, params in best_params_dict.items():
 print("=========================================\n", flush=True)
 
 
-# ==============================================================================
 # 6. CROSS-VALIDATION LOOP
-# ==============================================================================
+
 horizons = [24, 168, 720]
 tscv = TimeSeriesSplit(n_splits=CONFIG["n_splits"])
 
@@ -373,9 +371,9 @@ for horizon in horizons:
             }
             append_csv(res, CONFIG["results_path"])
 
-            # ------------------------------------------------------------------
-            # FEATURE IMPORTANCE  ← run on CPU to avoid CUDA OOM
-            # ------------------------------------------------------------------
+            
+            # FEATURE IMPORTANCE  ← important note: run on CPU to avoid CUDA OOM
+            
             if run == 0:
                 # Clear GPU memory before interpretation
                 torch.cuda.empty_cache()
@@ -442,10 +440,8 @@ for horizon in horizons:
 # Save importance CSV after cross-validation loop
 save_importance_csv()
 
-
-# ==============================================================================
 # 7. FINAL TEST EVALUATION
-# ==============================================================================
+
 print(f"\n{'='*40}\n>>> FINAL TEST EVALUATION\n{'='*40}", flush=True)
 
 for horizon in horizons:
@@ -511,12 +507,12 @@ for horizon in horizons:
         del tft, trainer
         torch.cuda.empty_cache()
 
-# ==============================================================================
+
 # 8. FINAL SAVES
-# ==============================================================================
+
 save_carbon_summary()
 
-# Re-save hyperparams (redundant but guarantees they're on disk even after crash)
+# Re-save hyperparams (redundant but this guarantees they're on disk even after crash)
 with open(CONFIG["best_params_path"], "w") as fh:
     json.dump(serialisable, fh, indent=2)
 

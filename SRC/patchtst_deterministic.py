@@ -16,9 +16,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from carbontracker.tracker import CarbonTracker
 
-# ==============================================================================
-# LOGGING SETUP
-# ==============================================================================
+#Logging Setup
+
 RUN_DIR = "DATA/patchtst_deterministic_run_01"
 os.makedirs(RUN_DIR, exist_ok=True)
 LOG_PATH = f"{RUN_DIR}/run_log.txt"
@@ -44,9 +43,8 @@ class Tee:
 sys.stdout = Tee(sys.stdout, LOG_PATH)
 sys.stderr = Tee(sys.stderr, LOG_PATH)
 
-# ==============================================================================
-# 1. CONFIG
-# ==============================================================================
+#1. Configuration
+
 CONFIG = {
     "dataset_path":            "DATA/final_data_with_features.csv",
     "results_path":            f"{RUN_DIR}/cv_results.csv",
@@ -79,9 +77,8 @@ ALL_FEATURES   = KNOWN_REALS + UNK_REALS + [TARGET]
 N_CHANNELS     = len(ALL_FEATURES)
 SCALE_FEATURES = ["wind_u", "wind_v", "ghi"]
 
-# ==============================================================================
-# 2. CARBON TRACKING
-# ==============================================================================
+#2. CARBON TRACKING
+
 carbon_records = []
 
 def make_tracker(label: str) -> CarbonTracker:
@@ -114,9 +111,8 @@ def save_carbon():
     pd.DataFrame(carbon_records).to_csv(CONFIG["carbon_summary_path"], index=False)
     print(f"[SAVED] Carbon summary → {CONFIG['carbon_summary_path']}", flush=True)
 
-# ==============================================================================
-# 3. DATASET
-# ==============================================================================
+#3. DATASET
+
 class ResidualLoadDataset(Dataset):
     """
     Sliding-window dataset.
@@ -149,9 +145,8 @@ def make_loaders(train_df, val_df, encoder_len, horizon, batch_size=32):
                        num_workers=8, pin_memory=True)
     return tr_ld, va_ld
 
-# ==============================================================================
-# 4. DETERMINISTIC PatchTST MODEL
-# ==============================================================================
+#4. Deterministic PatchTST Model
+
 class PatchEmbedding(nn.Module):
     """
     Splits a univariate time series of length L into patches of length P
@@ -245,9 +240,8 @@ class PatchTST(nn.Module):
         out = self.head(enc)                                              # (B, H)
         return out
 
-# ==============================================================================
 # 5. METRICS
-# ==============================================================================
+
 def compute_metrics(preds: torch.Tensor, actuals: torch.Tensor):
     """preds (N, H), actuals (N, H)"""
     mae   = torch.mean(torch.abs(preds - actuals)).item()
@@ -256,9 +250,8 @@ def compute_metrics(preds: torch.Tensor, actuals: torch.Tensor):
                        (torch.abs(preds) + torch.abs(actuals) + 1e-8)).item()
     return mae, rmse, smape
 
-# ==============================================================================
-# 6. TRAINING UTILITIES
-# ==============================================================================
+# 6. Training Utilities
+
 criterion = nn.MSELoss()
 
 def train_one_epoch(model, loader, optimizer):
@@ -343,9 +336,8 @@ def build_model(params: dict, encoder_len: int, horizon: int) -> PatchTST:
         dropout     = params.get("dropout", 0.1),
     ).to(DEVICE)
 
-# ==============================================================================
-# 7. DATA PREP  (identical 90/10 split to TFT and QR-PatchTST)
-# ==============================================================================
+#7. DATA PREPARATION (90% train/val, 10% test split)
+
 df = pd.read_csv(CONFIG["dataset_path"])
 df["utc_timestamp"] = pd.to_datetime(df["utc_timestamp"])
 df = df.sort_values("utc_timestamp").reset_index(drop=True)
@@ -370,9 +362,8 @@ def append_csv(row: dict, path: str):
     pd.DataFrame([row]).to_csv(path, mode="a", index=False,
                                header=not os.path.exists(path))
 
-# ==============================================================================
 # 8. OPTUNA OBJECTIVE
-# ==============================================================================
+
 def objective(trial, horizon: int) -> float:
     d_model = trial.suggest_categorical("d_model", [32, 64, 128, 256])
     lr      = trial.suggest_float("learning_rate", 1e-4, 1e-2, log=True)
@@ -396,9 +387,8 @@ def objective(trial, horizon: int) -> float:
     torch.cuda.empty_cache()
     return val_loss
 
-# ==============================================================================
-# 9. OPTUNA EXECUTION
-# ==============================================================================
+# 9. Optuna Execution
+
 print("\n--- Starting Optuna Hyperparameter Optimisation ---", flush=True)
 best_params_dict = {}
 
@@ -424,9 +414,7 @@ for h, p in best_params_dict.items():
     print(f"  {h}h : {p}", flush=True)
 print("=========================================\n", flush=True)
 
-# ==============================================================================
-# 10. FEATURE IMPORTANCE via attention weights
-# ==============================================================================
+#10. Feature Importance
 importance_records = []
 
 @torch.no_grad()
@@ -500,9 +488,8 @@ def save_importance_csv():
     else:
         print("[WARN] No importance records to save.", flush=True)
 
-# ==============================================================================
-# 11. CROSS-VALIDATION
-# ==============================================================================
+#11. CROSS-VALIDATION
+
 horizons = [24, 168, 720]
 tscv     = TimeSeriesSplit(n_splits=CONFIG["n_splits"])
 
@@ -552,9 +539,8 @@ for horizon in horizons:
 
 save_importance_csv()
 
-# ==============================================================================
-# 12. FINAL TEST EVALUATION
-# ==============================================================================
+#12. Final Test Evaluation
+
 print(f"\n{'='*40}\n>>> FINAL TEST EVALUATION\n{'='*40}", flush=True)
 
 for horizon in horizons:
@@ -595,9 +581,8 @@ for horizon in horizons:
         del model
         torch.cuda.empty_cache()
 
-# ==============================================================================
-# 13. FINAL SAVES & SUMMARY
-# ==============================================================================
+#13. Final Saves
+
 save_carbon()
 
 # Re-save hyperparams as safety net

@@ -15,6 +15,7 @@ import matplotlib.pyplot as plt
 from carbontracker.tracker import CarbonTracker
 
 # 1. SETUP & CONFIG
+
 CONFIG = {
     "dataset_path": "DATA/final_data_with_features.csv",
     "results_path": "DATA/optimized_final_results.csv",

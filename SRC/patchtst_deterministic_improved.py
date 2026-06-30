@@ -16,9 +16,9 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from carbontracker.tracker import CarbonTracker
 
-# ==============================================================================
-# LOGGING SETUP
-# ==============================================================================
+
+# Logging Setup
+
 RUN_DIR = "DATA/patchtst_improved_run_01"
 os.makedirs(RUN_DIR, exist_ok=True)
 LOG_PATH = f"{RUN_DIR}/run_log.txt"
@@ -44,21 +44,9 @@ class Tee:
 sys.stdout = Tee(sys.stdout, LOG_PATH)
 sys.stderr = Tee(sys.stderr, LOG_PATH)
 
-# ==============================================================================
+
 # 1. CONFIG
-#
-# This script applies the same 5 improvements made to QR-PatchTST, adapted
-# to a deterministic (point-forecast) output head:
-#   1. Longer encoder context (encoder_multiplier 2 -> 4)
-#   2. Separate known-future branch fused before the prediction head
-#   3. Tunable patch_size and stride (was fixed before)
-#   4. Tunable n_encoder_layers (2-4) (was fixed at 2 before)
-#   5. MLP prediction head instead of a single linear layer
-#
-# Loss remains MSE and the output remains a single point forecast per
-# horizon step, preserving a fair architectural comparison against TFT
-# and against the original (non-improved) deterministic PatchTST.
-# ==============================================================================
+
 CONFIG = {
     "dataset_path":            "DATA/final_data_with_features.csv",
     "results_path":            f"{RUN_DIR}/cv_results.csv",
@@ -82,7 +70,7 @@ CONFIG = {
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {DEVICE}", flush=True)
 
-# IMPROVEMENT 2: separate known-future from unknown features
+# IMPROVEMENT: separate known-future from unknown features
 # Known reals: available for the full forecast horizon (calendar, holidays)
 # Unknown reals: only observed in the past (wind, solar, target)
 TARGET            = "residual_load"
@@ -95,9 +83,8 @@ N_PAST_CH         = len(ALL_PAST_FEATURES)              # 10
 N_KNOWN_CH        = len(KNOWN_REALS)                    # 6  - also fed to decoder
 SCALE_FEATURES    = ["wind_u", "wind_v", "ghi"]
 
-# ==============================================================================
-# 2. CARBON TRACKING
-# ==============================================================================
+# 2. Carbon Tracker
+
 carbon_records = []
 
 def make_tracker(label: str) -> CarbonTracker:
@@ -155,11 +142,8 @@ def save_carbon():
     pd.DataFrame(carbon_records).to_csv(CONFIG["carbon_summary_path"], index=False)
     print(f"[SAVED] Carbon summary -> {CONFIG['carbon_summary_path']}", flush=True)
 
-# ==============================================================================
-# 3. DATASET
-# IMPROVEMENT 2: dataset now returns both past (encoder) and future known
-#                (decoder) tensors separately
-# ==============================================================================
+# 3. DATASET IMPROVEMENT
+
 class ResidualLoadDataset(Dataset):
     """
     Returns:
@@ -198,9 +182,8 @@ def make_loaders(train_df, val_df, encoder_len, horizon, batch_size=32):
                        num_workers=8, pin_memory=True)
     return tr_ld, va_ld
 
-# ==============================================================================
-# 4. MODEL COMPONENTS
-# ==============================================================================
+#4. Model Components
+
 class PatchEmbedding(nn.Module):
     """
     Univariate patch embedding with learnable positional encoding.
@@ -246,23 +229,7 @@ class TransformerEncoderLayer(nn.Module):
         x    = self.norm2(x + self.drop(self.ff(x)))
         return x
 
-# ==============================================================================
-# 5. IMPROVED DETERMINISTIC PatchTST MODEL
-# Incorporates all 5 improvements (same as ImprovedQRPatchTST), but with a
-# single-value-per-step output head and MSE loss instead of a quantile head
-# and pinball loss:
-#   1. Longer encoder (handled at dataset level via encoder_multiplier=4)
-#   2. Separate known-future branch fused before the prediction head
-#   3. Tunable patch_size and stride
-#   4. Tunable n_encoder_layers (2-4)
-#   5. MLP prediction head instead of single linear layer
-#
-# Key difference from ImprovedQRPatchTST:
-#   - Output head produces (B, H) point forecasts instead of (B, H, Q)
-#   - Trained with MSE loss instead of pinball loss
-#   - Directly optimises MAE/RMSE, preserving a fair architectural
-#     comparison against TFT and the original deterministic PatchTST
-# ==============================================================================
+
 class ImprovedPatchTST(nn.Module):
     """
     Channel-independent PatchTST encoder for past features +
@@ -344,9 +311,8 @@ class ImprovedPatchTST(nn.Module):
         out   = self.head(fused)                           # (B, H)
         return out
 
-# ==============================================================================
-# 6. METRICS
-# ==============================================================================
+#6. Metrics
+
 def compute_metrics(preds: torch.Tensor, actuals: torch.Tensor):
     """preds (N, H), actuals (N, H)"""
     mae   = torch.mean(torch.abs(preds - actuals)).item()
@@ -355,9 +321,8 @@ def compute_metrics(preds: torch.Tensor, actuals: torch.Tensor):
                        (torch.abs(preds) + torch.abs(actuals) + 1e-8)).item()
     return mae, rmse, smape
 
-# ==============================================================================
-# 7. TRAINING UTILITIES
-# ==============================================================================
+#7. Training Utilities
+
 criterion = nn.MSELoss()
 
 def train_one_epoch(model, loader, optimizer):
@@ -511,9 +476,8 @@ def objective(trial, horizon: int) -> float:
     torch.cuda.empty_cache()
     return val_loss
 
-# ==============================================================================
-# 10. OPTUNA EXECUTION
-# ==============================================================================
+#10. Optuna Execution
+
 print("\n--- Starting Optuna Hyperparameter Optimisation ---", flush=True)
 best_params_dict = {}
 
@@ -540,9 +504,8 @@ for h, p in best_params_dict.items():
     print(f"  {h}h : {p}", flush=True)
 print("=========================================\n", flush=True)
 
-# ==============================================================================
-# 11. FEATURE IMPORTANCE via attention weights
-# ==============================================================================
+#11. Feature Importance
+
 importance_records = []
 
 @torch.no_grad()
@@ -611,9 +574,8 @@ def save_importance_csv():
     else:
         print("[WARN] No importance records to save.", flush=True)
 
-# ==============================================================================
 # 12. CROSS-VALIDATION
-# ==============================================================================
+
 horizons = [24, 168, 720]
 tscv     = TimeSeriesSplit(n_splits=CONFIG["n_splits"])
 
@@ -663,9 +625,8 @@ for horizon in horizons:
 
 save_importance_csv()
 
-# ==============================================================================
-# 13. FINAL TEST EVALUATION
-# ==============================================================================
+#13. Final Test Evaluation
+
 print(f"\n{'='*40}\n>>> FINAL TEST EVALUATION\n{'='*40}", flush=True)
 
 for horizon in horizons:
@@ -706,9 +667,8 @@ for horizon in horizons:
         del model
         torch.cuda.empty_cache()
 
-# ==============================================================================
-# 14. FINAL SAVES
-# ==============================================================================
+# 14. Final Saves
+
 save_carbon()
 
 with open(CONFIG["best_params_path"], "w") as fh:

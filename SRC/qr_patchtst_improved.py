@@ -16,9 +16,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from carbontracker.tracker import CarbonTracker
 
-# ==============================================================================
-# LOGGING SETUP
-# ==============================================================================
+# Logging Setup
+
 RUN_DIR = "DATA/qr_patchtst_improved_run_01"
 os.makedirs(RUN_DIR, exist_ok=True)
 LOG_PATH = f"{RUN_DIR}/run_log.txt"
@@ -44,9 +43,8 @@ class Tee:
 sys.stdout = Tee(sys.stdout, LOG_PATH)
 sys.stderr = Tee(sys.stderr, LOG_PATH)
 
-# ==============================================================================
-# 1. CONFIG
-# ==============================================================================
+#1. Configuration
+
 CONFIG = {
     "dataset_path":            "DATA/final_data_with_features.csv",
     "results_path":            f"{RUN_DIR}/cv_results.csv",
@@ -85,9 +83,8 @@ N_PAST_CH         = len(ALL_PAST_FEATURES)          # 10
 N_KNOWN_CH        = len(KNOWN_REALS)                # 6  — also fed to decoder
 SCALE_FEATURES    = ["wind_u", "wind_v", "ghi"]
 
-# ==============================================================================
-# 2. CARBON TRACKING
-# ==============================================================================
+#2. Carbon Tracking
+
 carbon_records = []
 
 def make_tracker(label: str) -> CarbonTracker:
@@ -147,11 +144,10 @@ def save_carbon():
     pd.DataFrame(carbon_records).to_csv(CONFIG["carbon_summary_path"], index=False)
     print(f"[SAVED] Carbon summary → {CONFIG['carbon_summary_path']}", flush=True)
 
-# ==============================================================================
-# 3. DATASET
+#3. Dataset Improvement
 # IMPROVEMENT 2: dataset now returns both past (encoder) and future known
 #                (decoder) tensors separately
-# ==============================================================================
+
 class ResidualLoadDataset(Dataset):
     """
     Returns:
@@ -190,9 +186,8 @@ def make_loaders(train_df, val_df, encoder_len, horizon, batch_size=32):
                        num_workers=8, pin_memory=True)
     return tr_ld, va_ld
 
-# ==============================================================================
-# 4. MODEL COMPONENTS
-# ==============================================================================
+#4. Model Components
+
 class PatchEmbedding(nn.Module):
     """
     Univariate patch embedding with learnable positional encoding.
@@ -238,15 +233,7 @@ class TransformerEncoderLayer(nn.Module):
         x    = self.norm2(x + self.drop(self.ff(x)))
         return x
 
-# ==============================================================================
-# 5. IMPROVED QR-PatchTST MODEL
-# Incorporates all 5 improvements:
-#   1. Longer encoder (handled at dataset level via encoder_multiplier=4)
-#   2. Separate known-future branch fused before the prediction head
-#   3. Tunable patch_size and stride
-#   4. Tunable n_encoder_layers (2-4)
-#   5. MLP prediction head instead of single linear layer
-# ==============================================================================
+
 class ImprovedQRPatchTST(nn.Module):
     """
     Channel-independent PatchTST encoder for past features +
@@ -332,9 +319,8 @@ class ImprovedQRPatchTST(nn.Module):
         out   = out.reshape(B, self.horizon, self.Q)       # (B, H, Q)
         return out
 
-# ==============================================================================
-# 6. PINBALL LOSS
-# ==============================================================================
+#6. Metric Loss
+
 def pinball_loss(preds: torch.Tensor, targets: torch.Tensor,
                  quantiles: list) -> torch.Tensor:
     """preds (B,H,Q), targets (B,H)"""
@@ -344,9 +330,8 @@ def pinball_loss(preds: torch.Tensor, targets: torch.Tensor,
     loss = torch.max(q * err, (q - 1) * err)
     return loss.mean()
 
-# ==============================================================================
-# 7. METRICS
-# ==============================================================================
+#7. Metrics
+
 def compute_metrics(preds: torch.Tensor, actuals: torch.Tensor):
     """preds (N,H,Q), actuals (N,H) — median = index 1"""
     median = preds[:, :, 1]
@@ -356,9 +341,8 @@ def compute_metrics(preds: torch.Tensor, actuals: torch.Tensor):
                         (torch.abs(median) + torch.abs(actuals) + 1e-8)).item()
     return mae, rmse, smape
 
-# ==============================================================================
-# 8. TRAINING UTILITIES
-# ==============================================================================
+#8. Training Utilities
+
 def train_one_epoch(model, loader, optimizer):
     model.train()
     total = 0.0
@@ -445,9 +429,8 @@ def build_model(params: dict, encoder_len: int, horizon: int
         quantiles   = QUANTILES,
     ).to(DEVICE)
 
-# ==============================================================================
-# 9. DATA PREP
-# ==============================================================================
+# 9. Data Prep
+
 df = pd.read_csv(CONFIG["dataset_path"])
 df["utc_timestamp"] = pd.to_datetime(df["utc_timestamp"])
 df = df.sort_values("utc_timestamp").reset_index(drop=True)
@@ -473,10 +456,10 @@ def append_csv(row: dict, path: str):
     pd.DataFrame([row]).to_csv(path, mode="a", index=False,
                                header=not os.path.exists(path))
 
-# ==============================================================================
+
 # 10. OPTUNA OBJECTIVE
 # IMPROVEMENT 3 & 4: patch_size, stride, and n_layers added to search space
-# ==============================================================================
+
 def objective(trial, horizon: int) -> float:
     d_model    = trial.suggest_categorical("d_model",    [64, 128, 256])
     lr         = trial.suggest_float("learning_rate",    1e-4, 1e-2, log=True)
@@ -511,9 +494,8 @@ def objective(trial, horizon: int) -> float:
     torch.cuda.empty_cache()
     return val_loss
 
-# ==============================================================================
-# 11. OPTUNA EXECUTION
-# ==============================================================================
+#11. Optuna Execution
+
 print("\n--- Starting Optuna Hyperparameter Optimisation ---", flush=True)
 best_params_dict = {}
 
@@ -540,9 +522,8 @@ for h, p in best_params_dict.items():
     print(f"  {h}h : {p}", flush=True)
 print("=========================================\n", flush=True)
 
-# ==============================================================================
-# 12. FEATURE IMPORTANCE via attention weights
-# ==============================================================================
+#12. FEATURE IMPORTANCE EXTRACTION
+
 importance_records = []
 
 @torch.no_grad()
@@ -611,9 +592,8 @@ def save_importance_csv():
     else:
         print("[WARN] No importance records to save.", flush=True)
 
-# ==============================================================================
-# 13. CROSS-VALIDATION
-# ==============================================================================
+#13. CROSS-VALIDATION
+
 horizons = [24, 168, 720]
 tscv     = TimeSeriesSplit(n_splits=CONFIG["n_splits"])
 
@@ -663,9 +643,8 @@ for horizon in horizons:
 
 save_importance_csv()
 
-# ==============================================================================
-# 14. FINAL TEST EVALUATION
-# ==============================================================================
+#14. FINAL TEST EVALUATION
+
 print(f"\n{'='*40}\n>>> FINAL TEST EVALUATION\n{'='*40}", flush=True)
 
 for horizon in horizons:
@@ -706,9 +685,8 @@ for horizon in horizons:
         del model
         torch.cuda.empty_cache()
 
-# ==============================================================================
-# 15. FINAL SAVES
-# ==============================================================================
+#15. Final Saves
+
 save_carbon()
 
 with open(CONFIG["best_params_path"], "w") as fh:
